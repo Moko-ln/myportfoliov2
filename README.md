@@ -1,6 +1,6 @@
 #  Portfolio V2
 
-Welcome to the showcase site for the main characters of the Netflix series "Cyberpunk Edgerunners". This project is built with React.
+Welcome to my portfolio repository v2, a personal website created using NextJS. This portfolio is designed to showcase my skills, projects, and professional experiences.
 
 ## Table of content
 
