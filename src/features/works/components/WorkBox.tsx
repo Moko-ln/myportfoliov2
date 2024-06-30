@@ -1,13 +1,12 @@
 "use client"
 
-import {lato, montserrat, poppins} from "@/font/Fonts";
+import {montserrat, poppins} from "@/font/Fonts";
 import Image from "next/image";
 import toast from "react-hot-toast";
-import {dataWorkPropType, shareProjectLinkPropType} from "@/type";
-import {motion} from "framer-motion";
+import {dataWorkPropType} from "@/type";
 import Image1 from "@/assets/images/portrait.webp";
 import {HireMe} from "@/components/button/HireMe";
-import {FiArrowUpRight, FiGithub, FiGlobe, FiKey, FiLoader, FiSettings} from "react-icons/fi";
+import {FiArrowUpRight, FiGlobe, FiSettings} from "react-icons/fi";
 import {Social} from "@/components/social/Social";
 
 export const WorkBox = () => {
