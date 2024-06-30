@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.02 66.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #333;
+      }
+
+      .cls-3 {
+        font-size: 47.11px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: Poppins-Regular, Poppins;
+      }
+
+      .cls-4 {
+        font-size: 45.83px;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(82.49 39.82) scale(.96 1)"><tspan x="0" y="0">k</tspan></text>
+  <text class="cls-3" transform="translate(0 39.99) scale(.93 1)"><tspan x="0" y="0">m</tspan></text>
+  <text class="cls-3" transform="translate(106.99 39.99) scale(.93 1)"><tspan x="0" y="0">o</tspan></text>
+  <g>
+    <circle class="cls-2" cx="74.24" cy="31.3" r="1.78"/>
+    <g>
+      <circle class="cls-1" cx="63.89" cy="22.3" r="7.6"/>
+      <path class="cls-2" d="M71.73,35.71l-2.16-1.88c-4.34,2.06-9.69,1.51-13.54-1.84-5.19-4.51-5.74-12.4-1.23-17.59s12.4-5.74,17.59-1.23c3.85,3.35,5.14,8.57,3.71,13.15l2.16,1.88c2.32-5.82.88-12.72-4.11-17.05-6.3-5.48-15.89-4.81-21.37,1.49s-4.81,15.89,1.49,21.37c4.99,4.33,12.02,4.81,17.46,1.7Z"/>
+    </g>
+  </g>
+</svg>

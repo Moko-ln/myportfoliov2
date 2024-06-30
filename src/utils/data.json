@@ -1,0 +1,18 @@
+{
+  "projets": [
+    {
+      "nom": "Lemiza",
+      "description": "Une application de gestion de tâches permettant aux utilisateurs de créer, modifier et supprimer des tâches. Intégration de fonctionnalités avancées telles que les rappels et les priorités.",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "image": "image1",
+      "status": "Finish"
+    },
+    {
+      "nom": "MobaliCorps",
+      "description": "Développement d'un blog personnel avec des fonctionnalités telles que la publication d'articles, les commentaires et l'authentification des utilisateurs. Interface conviviale et responsive.",
+      "technologies": ["Django", "React", "SQLite"],
+      "image": "image2",
+      "status": "Finish"
+    }
+  ]
+}
