@@ -16,6 +16,7 @@ Welcome to my portfolio repository v2, a personal website created using NextJS. 
 ## Technologies Used
 
 - NextJS
+- TypeScript
 - TailwindCSS
 
 ## Installation
