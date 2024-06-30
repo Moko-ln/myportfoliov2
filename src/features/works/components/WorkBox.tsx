@@ -75,7 +75,7 @@ export const WorkBox = () => {
                     <ul className="flex flex-col divide-y divide-slate-200">
                         { dataWork.map(item =>
                             <li key={item.id} className="flex flex-col lg:gap-10 gap-4 items-center justify-center h-full py-10">
-                                <div className={`rounded-2xl pt-10 px-10 overflow-hidden w-full h-[700px] relative flex justify-center ${item.bgColor}`}>
+                                <div className={`rounded-2xl pt-10 px-10 overflow-hidden w-full xl:h-[700px] h-60 relative flex justify-center ${item.bgColor}`}>
                                     <Image
                                         src={`/uploads/${item.image}.webp`}
                                         alt={item.title}

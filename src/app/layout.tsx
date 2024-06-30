@@ -3,12 +3,11 @@ import {lato} from "@/font/Fonts";
 import "../assets/scss/index.scss";
 import {Header} from "@/components/partials/Header";
 import {Footer} from "@/components/partials/Footer";
-import React from "react";
 import {Toaster} from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "My portfolio",
-  description: "THis is my v2 portfolio",
+  description: "This is Serge Lema v2 portfolio",
 };
 
 export default function RootLayout({
@@ -24,8 +23,6 @@ export default function RootLayout({
               <span key={line} className="block border lg:border-slate-200 border-slate-100 h-full"></span>
           )}
         </div>
-
-        <button className="fixed transform -translate-y-1/2 right-0 top-40 z-30 align-text-top text-slate-500 rotate-90">Moko Agency </button>
         <Header />
         <main className="relative w-full">{ children }</main>
         <Footer />
