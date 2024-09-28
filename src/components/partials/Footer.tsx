@@ -12,7 +12,7 @@ export const Footer = () => {
         })
     }
     return (
-        <footer className="py-2 z-10 relative w-full bg-white">
+        <footer className="py-2 z-10 relative w-full bg-slate-50">
             <div className="container-root">
                 <div className="wrapper flex items-center justify-between gap-2">
                     <div className="flex items-center justify-between">

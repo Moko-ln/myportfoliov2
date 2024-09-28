@@ -8,7 +8,7 @@ import { ReactLenis } from 'lenis/react';
 export default function Home() {
 
     return (
-        <ReactLenis root>
+            <ReactLenis root>
             <motion.section
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}

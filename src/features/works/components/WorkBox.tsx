@@ -8,6 +8,7 @@ import Image1 from "@/assets/images/portrait.webp";
 import {HireMe} from "@/components/button/HireMe";
 import {FiArrowUpRight, FiGlobe, FiSettings} from "react-icons/fi";
 import {Social} from "@/components/social/Social";
+import {motion} from "framer-motion";
 
 export const WorkBox = () => {
 
@@ -71,16 +72,23 @@ export const WorkBox = () => {
             </div>
             <div className="container-root pt-10">
                 <div className="xl:w-9/12 w-9/12 mx-auto flex flex-col items-center">
-                    <ul className="flex flex-col divide-y divide-slate-200">
+                    <ul className="flex flex-col divide-y divide-slate-200 gap-10">
                         { dataWork.map(item =>
-                            <li key={item.id} className="flex flex-col lg:gap-10 gap-4 items-center justify-center h-full py-10">
-                                <div className={`rounded-2xl pt-10 px-10 overflow-hidden w-full xl:h-[700px] h-60 relative flex justify-center ${item.bgColor}`}>
+                            <motion.li
+                                key={item.id}
+                                className="flex flex-col lg:gap-10 gap-4 items-center justify-center h-full"
+
+                                initial={{ opacity: 0, x: (item.id % 2 === 0 ) ? 20 : -20, y: 20 }}
+                                whileInView={{ opacity: 1, x: 0, y: 0 }}
+                                transition={{ type: "spring", duration:.5, ease:"easeIn", delay:.2 }}
+                            >
+                                <div className={`rounded-2xl pt-10 px-10 overflow-hidden w-full relative flex justify-center ${item.bgColor}`}>
                                     <Image
                                         src={`/uploads/${item.image}.webp`}
                                         alt={item.title}
                                         width={1440}
                                         height={700}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-contain"
                                     />
                                 </div>
 
@@ -112,7 +120,7 @@ export const WorkBox = () => {
                                         <span className="text-slate-700 text-lg group-hover:animate-spin duration-1000"><FiSettings/></span>
                                     </div>
                                 }
-                            </li>
+                            </motion.li>
                         )}
                     </ul>
                 </div>
@@ -128,31 +136,31 @@ export const WorkBox = () => {
 }
 
 const dataWork: dataWorkPropType[] = [
-    // {
-    //     id: 1,
-    //     title: "Isia cnrs",
-    //     description: "Here is the ISIA application. It is a platform developed using the Symfony framework for the backend and React for the frontend. We are currently working on version 3 of the application, which will improve the design and features.",
-    //     content: "ISIA is designed to meet the needs of researchers, laboratory managers, and students by offering an intuitive interface and advanced functionalities. Our goal is to facilitate scientific work and enhance the productivity of our users.",
-    //     image: "isia",
-    //     done: false,
-    //     private: false,
-    //     bgColor: "bg-blue-200",
-    //     share: [
-    //         {
-    //             id: 1,
-    //             title: "See the website",
-    //             icon: <FiGlobe/>,
-    //             link: "https://test.isia.cnrs.fr/",
-    //         },
-    //     ]
-    // },
+    {
+        id: 1,
+        title: "Isia cnrs",
+        description: "Here is the ISIA application. It is a platform developed using the Symfony framework for the backend and React for the frontend. We are currently working on version 3 of the application, which will improve the design and features.",
+        content: "ISIA is designed to meet the needs of researchers, laboratory managers, and students by offering an intuitive interface and advanced functionalities. Our goal is to facilitate scientific work and enhance the productivity of our users.",
+        image: "isia",
+        done: false,
+        private: false,
+        bgColor: "bg-blue-200",
+        share: [
+            {
+                id: 1,
+                title: "See the website",
+                icon: <FiGlobe/>,
+                link: "https://test.isia.cnrs.fr/",
+            },
+        ]
+    },
 
     {
         id: 1,
         title: "Cyberpunk: Edgerunners",
         description: "Welcome to the Cyberpunk: Edgerunners fan site. This project is built using the React framework for the frontend and TailwindCSS for styling. We aim to create an immersive experience for fans of the series.",
         content: "Cyberpunk: Edgerunners is designed to showcase the main characters and episodes from the Netflix series. The site offers an engaging interface and rich content to enhance the viewer's connection to the Cyberpunk universe.",
-        image: "cyberpunk", // Assurez-vous que cette image est accessible dans votre projet
+        image: "cyberpunk",
         done: true,
         private: false,
         bgColor: "bg-yellow-200",
@@ -170,7 +178,7 @@ const dataWork: dataWorkPropType[] = [
         title: "Lemiza  traiteur",
         description: "Here is a website designed for a client in the catering industry, developed using Next.js and incorporating TypeScript for a robust and secure development experience.",
         content: "This website features a user-friendly interface and a primary functionality: a contact form. The form allows visitors to easily contact the caterer for orders, inquiries, or special requests.",
-        image: "lemiza",
+        image: "lemizaold",
         done: true,
         private: false,
         bgColor: "bg-green-200",
@@ -188,7 +196,7 @@ const dataWork: dataWorkPropType[] = [
         title: "Mobalicorp",
         description: "Here is an online news management web app, powered by the MERN stack (MongoDB, Express.js, React.js, Node.js). This app was designed for MobaliCorp, an influence agency.",
         content: "The app provides a user-friendly interface for efficiently managing online news, with advanced features such as user management and article publishing.",
-        image: "mobali",
+        image: "mobaliold",
         done: true,
         private: true,
         bgColor: "bg-rose-200",

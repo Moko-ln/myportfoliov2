@@ -1,6 +1,6 @@
 import {montserrat} from "@/font/Fonts";
 import {useState} from "react";
-import {FiBox, FiCommand, FiGitlab} from "react-icons/fi";
+import {FiBell, FiBox, FiCommand, FiGitlab, FiHexagon} from "react-icons/fi";
 import {useMediaQuery} from "react-responsive";
 import {dataExperiencePropType} from "@/type";
 
@@ -73,7 +73,7 @@ const dataExperience: any = [
         title: "FrontEnd developer",
         periode: "Sept 2023 - Present",
         enterprise: "CNRS",
-        logo: <FiCommand />,
+        logo: <FiHexagon />,
         ville: "Nemours",
         languages:["ReactJS", "Javascript", "TailwindCSS"]
     },
@@ -91,7 +91,7 @@ const dataExperience: any = [
         title: "Front-End developer",
         periode: "Mars - Aout 2022",
         enterprise: "D\'or et de vin",
-        logo: <FiGitlab />,
+        logo: <FiBell />,
         ville: "Paris",
         languages:["Wordpress", "Oxygen"]
     }
