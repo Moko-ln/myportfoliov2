@@ -178,7 +178,7 @@ const dataWork: dataWorkPropType[] = [
         title: "Lemiza  traiteur",
         description: "Here is a website designed for a client in the catering industry, developed using Next.js and incorporating TypeScript for a robust and secure development experience.",
         content: "This website features a user-friendly interface and a primary functionality: a contact form. The form allows visitors to easily contact the caterer for orders, inquiries, or special requests.",
-        image: "lemizaold",
+        image: "lemiza",
         done: true,
         private: false,
         bgColor: "bg-green-200",
