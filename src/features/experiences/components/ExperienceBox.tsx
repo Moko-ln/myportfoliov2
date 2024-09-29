@@ -89,7 +89,7 @@ const dataExperience: dataExperiencePropType[] = [
         enterprise: "CNRS",
         logo: <FiHexagon />,
         ville: "Nemours",
-        languages:["ReactJS", "Adobe XD", "TailwindCSS"],
+        languages:["ReactJS", "AdobeXD", "Tailwind"],
         linkEnterprise:"https://www.cnrs.fr/fr"
     },
     {
