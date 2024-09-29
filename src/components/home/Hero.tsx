@@ -21,7 +21,7 @@ export const Hero = () => {
                         <div className={`lg:w-9/12 w-full flex flex-col gap-10 xl:min-h-screen lg:border-none border border-slate-200 rounded-sm p-2`}>
                             <div className="w-full">
                                 <motion.h2
-                                    className={`lg:text-6xl text-5xl font-black tracking-widest text-slate-800 lg:mb-10 mb-8 ${montserrat.className}`}
+                                    className={`lg:text-6xl text-4xl font-black tracking-widest text-slate-800 lg:mb-10 mb-8 ${montserrat.className}`}
                                     initial={{ opacity: 0, translateY: 15 }}
                                     animate={{ opacity: 1, translateY: 0 }}
                                     transition={{ type: "spring", duration:.6, delay: 0.2, ease:"linear" }}

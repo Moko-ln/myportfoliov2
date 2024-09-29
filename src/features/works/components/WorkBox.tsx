@@ -88,6 +88,7 @@ export const WorkBox = () => {
                                         alt={item.title}
                                         width={1440}
                                         height={700}
+                                        quality={100}
                                         className="w-full h-full object-contain"
                                     />
                                 </div>

@@ -1,4 +1,4 @@
-import {FiCommand, FiGlobe} from "react-icons/fi";
+import {FiCommand, FiGlobe, FiHexagon} from "react-icons/fi";
 import React from "react";
 
 export interface dataWorkPropType {
@@ -34,4 +34,15 @@ export interface shareProjectLinkPropType {
     title:string;
     icon:any;
     link: string;
+}
+
+export interface dataExperiencePropType {
+    id: number,
+    title: string,
+    periode: string,
+    enterprise: string,
+    logo: any,
+    ville: string,
+    languages: string[],
+    linkEnterprise?: string,
 }
