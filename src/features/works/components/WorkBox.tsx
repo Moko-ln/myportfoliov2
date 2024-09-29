@@ -140,7 +140,7 @@ const dataWork: dataWorkPropType[] = [
     {
         id: 1,
         title: "Isia cnrs",
-        description: "Here is the ISIA application. It is a platform developed using the Symfony framework for the backend and React for the frontend. We are currently working on version 3 of the application, which will improve the design and features.",
+        description: "Here is the ISIA application. It is a platform developed using the Symfony framework for the backend and React for the frontend. My work involved redesigning the application.",
         content: "ISIA is designed to meet the needs of researchers, laboratory managers, and students by offering an intuitive interface and advanced functionalities. Our goal is to facilitate scientific work and enhance the productivity of our users.",
         image: "isia",
         done: true,
