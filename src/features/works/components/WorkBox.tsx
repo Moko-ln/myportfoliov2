@@ -3,14 +3,18 @@
 import {montserrat, poppins} from "@/font/Fonts";
 import Image from "next/image";
 import toast from "react-hot-toast";
-import {dataWorkPropType} from "@/type";
+import {dataWorkPropType, dictWorkPropType} from "@/type";
 import Image1 from "@/assets/images/portrait.webp";
 import {HireMe} from "@/components/button/HireMe";
-import {FiArrowUpRight, FiGlobe, FiSettings} from "react-icons/fi";
+import {FiArrowUpRight, FiSettings} from "react-icons/fi";
 import {Social} from "@/components/social/Social";
-import {motion} from "framer-motion";
+import {motion} from "framer-motion";import useLangage from "@/useLangage";
 
 export const WorkBox = () => {
+
+    const data = useLangage();
+
+    const dataWork: dictWorkPropType | any = data?.dataWork;
 
     const handleClick = (link: string, done: boolean) => {
 
@@ -73,7 +77,7 @@ export const WorkBox = () => {
             <div className="container-root pt-10">
                 <div className="xl:w-9/12 w-9/12 mx-auto flex flex-col items-center">
                     <ul className="flex flex-col divide-y divide-slate-200 gap-10">
-                        { dataWork.map(item =>
+                        { dataWork?.works.map((item: dataWorkPropType) =>
                             <motion.li
                                 key={item.id}
                                 className="flex flex-col lg:gap-10 gap-4 items-center justify-center h-full"
@@ -135,79 +139,3 @@ export const WorkBox = () => {
         </article>
     )
 }
-
-const dataWork: dataWorkPropType[] = [
-    {
-        id: 1,
-        title: "Isia cnrs",
-        description: "Here is the ISIA application. It is a platform developed using the Symfony framework for the backend and React for the frontend. My work involved redesigning the application.",
-        content: "ISIA is designed to meet the needs of researchers, laboratory managers, and students by offering an intuitive interface and advanced functionalities. Our goal is to facilitate scientific work and enhance the productivity of our users.",
-        image: "isia",
-        done: true,
-        private: false,
-        bgColor: "bg-blue-200",
-        share: [
-            {
-                id: 1,
-                title: "See the website",
-                icon: <FiGlobe/>,
-                link: "https://isia.cnrs.fr/",
-            },
-        ]
-    },
-
-    {
-        id: 1,
-        title: "Cyberpunk: Edgerunners",
-        description: "Welcome to the Cyberpunk: Edgerunners fan site. This project is built using the React framework for the frontend and TailwindCSS for styling. We aim to create an immersive experience for fans of the series.",
-        content: "Cyberpunk: Edgerunners is designed to showcase the main characters and episodes from the Netflix series. The site offers an engaging interface and rich content to enhance the viewer's connection to the Cyberpunk universe.",
-        image: "cyberpunk",
-        done: true,
-        private: false,
-        bgColor: "bg-yellow-200",
-        share: [
-            {
-                id: 1,
-                title: "Visit the website",
-                icon: <FiGlobe />,
-                link: "https://cyberpunk-edgerunners.netlify.app/",
-            },
-        ],
-    },
-    {
-        id: 2,
-        title: "Lemiza  traiteur",
-        description: "Here is a website designed for a client in the catering industry, developed using Next.js and incorporating TypeScript for a robust and secure development experience.",
-        content: "This website features a user-friendly interface and a primary functionality: a contact form. The form allows visitors to easily contact the caterer for orders, inquiries, or special requests.",
-        image: "lemiza",
-        done: true,
-        private: false,
-        bgColor: "bg-green-200",
-        share: [
-            {
-                id: 1,
-                title: "See the website",
-                icon: <FiGlobe/>,
-                link: "https://www.lemiza.fr/",
-            },
-        ]
-    },
-    {
-        id: 3,
-        title: "Mobalicorp",
-        description: "Here is an online news management web app, powered by the MERN stack (MongoDB, Express.js, React.js, Node.js). This app was designed for MobaliCorp, an influence agency.",
-        content: "The app provides a user-friendly interface for efficiently managing online news, with advanced features such as user management and article publishing.",
-        image: "mobaliold",
-        done: true,
-        private: true,
-        bgColor: "bg-rose-200",
-        share: [
-            {
-                id: 1,
-                title: "See the website",
-                icon: <FiGlobe/>,
-                link: "https://mblcorps.com/",
-            },
-        ]
-    },
-]

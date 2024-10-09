@@ -55,3 +55,5 @@ export const contentMentionsLegales = [
         content:"Tout litige en relation avec l‘utilisation de ce site est soumis à la législation en vigueur.",
     },
 ]
+
+export const langages = ["NextJs", "ReactJs", "TypeScript", "TailWindCSS"]

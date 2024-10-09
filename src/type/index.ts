@@ -1,6 +1,3 @@
-import {FiCommand, FiGlobe, FiHexagon} from "react-icons/fi";
-import React from "react";
-
 export interface dataWorkPropType {
     id: number;
     title: string,
@@ -45,4 +42,41 @@ export interface dataExperiencePropType {
     ville: string,
     languages: string[],
     linkEnterprise?: string,
+}
+
+export interface dataDictionaryPropType {
+    dataHero: dictHeroPropType;
+    dataAbout: dictAboutPropType;
+    dataExperience: dataExperiencePropType;
+    dataWork: dictWorkPropType;
+}
+
+export interface dictHeroPropType {
+    id: number;
+    title: string;
+    subText: string;
+    text: string;
+}
+
+export interface dictAboutPropType {
+    id: number;
+    title: string;
+    text: string;
+    textbtn:string;
+    textfollow:string;
+}
+
+export interface dictExperiencePropType {
+    id: number;
+    text: string;
+    title: string;
+    experiences: dataExperiencePropType[]
+}
+
+export interface dictWorkPropType {
+    id: number;
+    title: string;
+    subText: string;
+    text: string;
+    works: dataWorkPropType[]
 }

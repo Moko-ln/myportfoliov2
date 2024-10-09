@@ -5,10 +5,16 @@ import {AboutBox} from "@/components/about/AboutBox";
 import {ExperienceBox} from "@/features/experiences/components/ExperienceBox";
 import {montserrat} from "@/font/Fonts";
 import Image1 from "@/assets/images/portrait.webp"
-import {compPropType} from "@/type";
+import {compPropType, dictHeroPropType} from "@/type";
 import {motion} from "framer-motion";
+import useLangage from "@/useLangage";
 
 export const Hero = () => {
+
+    const data = useLangage();
+
+    const dataHero: dictHeroPropType | undefined = data?.dataHero;
+
     return (
         <article className="min-h-screen flex justify-center">
             <div className="container-root w-full overflow-hidden">
@@ -25,7 +31,7 @@ export const Hero = () => {
                                     initial={{ opacity: 0, translateY: 15 }}
                                     animate={{ opacity: 1, translateY: 0 }}
                                     transition={{ type: "spring", duration:.6, delay: 0.2, ease:"linear" }}
-                                >Hi! I&lsquo;am <span className="block">Serge Lema</span>
+                                >{dataHero?.title}<span className="block">{dataHero?.subText}</span>
                                 </motion.h2>
                                 <motion.p
                                     className="text-slate-500 text-lg max-w-[450px]"
@@ -33,7 +39,7 @@ export const Hero = () => {
                                     animate={{ opacity: 1, translateY: 0 }}
                                     transition={{ type: "spring", duration:.6, delay: 0.3, ease:"linear" }}
                                 >
-                                    A Front-End developer based in France 🇫🇷. I&lsquo;m passionnate on build things for the web
+                                    { dataHero?.text }
                                 </motion.p>
                             </div>
                         </div>
