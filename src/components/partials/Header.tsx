@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {Brand} from "@/components/header/Brand";
-import LangageBtn from "@/components/button/LangageBtn";
 
 export const Header = () => {
     return (
@@ -12,9 +11,6 @@ export const Header = () => {
                             <Brand />
                         </Link>
                     </h1>
-
-                    {/* Langage */}
-                    <LangageBtn />
                 </div>
             </div>
         </header>

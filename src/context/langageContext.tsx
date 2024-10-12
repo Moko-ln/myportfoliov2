@@ -2,6 +2,7 @@ import { createContext, useEffect, useState, ReactNode } from 'react';
 import { dictionaryAng, dictionaryFr } from "@/utils/Dictionary";
 import {dataDictionaryPropType} from "@/type";
 import {FiArrowDown, FiChevronDown} from "react-icons/fi";
+import LoadingPage from "@/components/LoadingPage";
 
 export const LangageContext = createContext<dataDictionaryPropType | null>(null);
 
@@ -11,8 +12,16 @@ interface MyComponentProps {
 
 const LangageProvider: React.FC<MyComponentProps> = ({ children }) => {
     const [langage, setLangage] = useState<string>("ang");
-
+    const [isLoading, setIsLoading] = useState<boolean>(false);
     const [dict, setDict] = useState<dataDictionaryPropType | null>(null);
+
+    useEffect(() => {
+        if(isLoading){
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 2000)
+        }
+    }, [isLoading]);
 
     useEffect(() => {
         if (langage === "fr") {
@@ -23,8 +32,11 @@ const LangageProvider: React.FC<MyComponentProps> = ({ children }) => {
     }, [langage]);
 
     const toggleLangage = () => {
+        setIsLoading(true);
         setLangage(langage === 'ang' ? 'fr' : 'ang');
     };
+
+    if (isLoading) return <LoadingPage />
 
     return (
         <LangageContext.Provider value={ dict }>

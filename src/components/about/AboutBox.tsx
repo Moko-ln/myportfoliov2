@@ -4,7 +4,7 @@ import {Social} from "@/components/social/Social";
 import {motion} from "framer-motion";
 import {HireMe} from "@/components/button/HireMe";
 import useLangage from "@/useLangage";
-import {dictAboutPropType, dictHeroPropType} from "@/type";
+import {dictAboutPropType} from "@/type";
 import {langages} from "@/utils/Data";
 
 export const AboutBox = () => {
@@ -14,7 +14,7 @@ export const AboutBox = () => {
     const dataAbout: dictAboutPropType | undefined = data?.dataAbout;
 
     const handleClickPdf = () => {
-        window.open('/resume.pdf', '_blank');
+        window.open(`/${data?.lan === "fr" ? "resume-fr" : "resume-en"}.pdf`, '_blank');
     }
 
     return (

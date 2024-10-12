@@ -37,7 +37,7 @@ export const WorkBox = () => {
             {/* Header Infos */}
             <div className="h-20 sticky top-0 bg-zinc-50 z-10 border border-zinc-200">
                 <div className="container-root flex items-center justify-center h-full ">
-                    <div className="xl:w-9/12 w-9/12 flex items-center ">
+                    <div className="xl:w-9/12 w-9/12 flex items-center">
                         <div className="flex lg:items-center justify-center w-full">
                             <div className="flex lg:items-center gap-4 grow w-2/5">
                                 <div className="lg:h-12 lg:w-12 w-8 h-8 relative order-first">
@@ -75,7 +75,7 @@ export const WorkBox = () => {
                 </div>
             </div>
             <div className="container-root pt-10">
-                <div className="xl:w-9/12 w-9/12 mx-auto flex flex-col items-center">
+                <div className="xl:w-9/12 w-9/12 mx-auto flex flex-col items-center mb-10">
                     <ul className="flex flex-col divide-y divide-slate-200 gap-10">
                         { dataWork?.works.map((item: dataWorkPropType) =>
                             <motion.li

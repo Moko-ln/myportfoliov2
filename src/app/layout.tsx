@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import {lato} from "@/font/Fonts";
 import "../assets/scss/index.scss";
-import {Header} from "@/components/partials/Header";
-import {Footer} from "@/components/partials/Footer";
 import {Toaster} from "react-hot-toast";
 
 export const metadata: Metadata = {
@@ -23,9 +21,7 @@ export default function RootLayout({
               <span key={line} className="block border lg:border-slate-200 border-slate-100 h-full"></span>
           )}
         </div>
-        <Header />
-        <main className="relative w-full">{ children }</main>
-        <Footer />
+          { children }
         <Toaster />
       </body>
     </html>

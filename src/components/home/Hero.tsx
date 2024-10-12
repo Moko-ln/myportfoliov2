@@ -50,7 +50,7 @@ export const Hero = () => {
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ type: "spring", duration: 0.5, ease: "linear" }}
                         >
-                            <figure className="lg:h-52 lg:w-52 w-32 h-32 overflow-hidden ">
+                            <figure className="lg:h-52 lg:w-52 w-32 h-32 overflow-hidden">
                                 <Image
                                     src={Image1}
                                     width={500}

@@ -1,6 +1,7 @@
 import {FiBell, FiBox, FiGlobe, FiHexagon} from "react-icons/fi";
 
 export const dictionaryFr = {
+    lan:"fr",
     dataHero: {
                 id:1,
                 title:"Salut! je m'appelle",
@@ -132,6 +133,7 @@ export const dictionaryFr = {
 }
 
 export const dictionaryAng = {
+    lan:"en",
     dataHero:
         {
             id:1,

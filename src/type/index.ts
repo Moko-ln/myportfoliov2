@@ -45,6 +45,7 @@ export interface dataExperiencePropType {
 }
 
 export interface dataDictionaryPropType {
+    lan: string;
     dataHero: dictHeroPropType;
     dataAbout: dictAboutPropType;
     dataExperience: dataExperiencePropType;
