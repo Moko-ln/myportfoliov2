@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState, ReactNode } from 'react';
 import { dictionaryAng, dictionaryFr } from "@/utils/Dictionary";
 import {dataDictionaryPropType} from "@/type";
-import {FiArrowDown, FiChevronDown} from "react-icons/fi";
+import {FiChevronDown} from "react-icons/fi";
 import LoadingPage from "@/components/LoadingPage";
 
 export const LangageContext = createContext<dataDictionaryPropType | null>(null);

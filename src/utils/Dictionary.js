@@ -213,7 +213,7 @@ export const dictionaryAng = {
                 id: 2,
                 title: "Cyberpunk: Edgerunners",
                 Description: "This project was built with Next.js and TailwindCSS. My goal is to create an immersive experience for fans of the series.",
-                Content: "This site showcases the main characters from the Netflix series. It offers an engaging interface and rich content to enhance the viewers' connection to the Cyberpunk universe.",
+                content: "This site showcases the main characters from the Netflix series. It offers an engaging interface and rich content to enhance the viewers' connection to the Cyberpunk universe.",
                 image: "cyberpunk",
                 done: true,
                 private: false,

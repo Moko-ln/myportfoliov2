@@ -31,9 +31,9 @@ export const AboutBox = () => {
             <div className="flex items-center gap-8">
                 <HireMe />
                 <button
-                    className="flex items-center gap-2 text-slate-800 group hover:text-blue-500 transition ease-linear"
+                    className="flex items-center gap-2 text-slate-800 group hover:text-slate-500 transition ease-linear"
                     onClick={ handleClickPdf }
-                >{dataAbout?.textbtn} <span className="group-hover:text-blue-300 group-hover:rotate-45 transition ease-linear"><FiArrowUpRight/></span></button>
+                >{dataAbout?.textbtn} <span className="group-hover:text-slate-300 group-hover:rotate-45 transition ease-linear"><FiArrowUpRight/></span></button>
             </div>
 
             <ul className="text-slate-500 text-sm flex gap-4">

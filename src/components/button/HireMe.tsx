@@ -13,7 +13,7 @@ export const HireMe = () => {
 
     return (
         <motion.button
-            className="w-10 h-10 text-slate-50 rounded-full bg-blue-500 flex items-center justify-center"
+            className="w-10 h-10 text-slate-50 rounded-full bg-slate-950 flex items-center justify-center"
             onClick={handleClickHireMe}
 
             whileHover={{scale: 1.035}}

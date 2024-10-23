@@ -11,7 +11,9 @@ export default function Home() {
         <LangageProvider>
             <ReactLenis root>
                 <Header />
-                    <main className="w-full"><Section /></main>
+                    <main className="w-full">
+                        <Section />
+                    </main>
                 <Footer />
             </ReactLenis>
         </LangageProvider>

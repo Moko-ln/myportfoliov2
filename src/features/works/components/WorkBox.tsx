@@ -54,11 +54,11 @@ export const WorkBox = () => {
                                 <div className="flex flex-col gap-2">
                                     <p className={`${montserrat.className} lg:text-md text-xs`}>Serge Lema, <span
                                         className="font-semibold">Web Developer</span></p>
-                                    <p className="flex gap-2 items-center text-blue-500 text-sm">
+                                    <p className="flex gap-2 items-center text-slate-500 text-sm">
                                     <span className="relative flex h-3 w-3">
                                       <span
-                                          className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
-                                      <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                                          className="animate-ping absolute inline-flex h-full w-full rounded-full bg-slate-500 opacity-75"></span>
+                                      <span className="relative inline-flex rounded-full h-3 w-3 bg-slate-500"></span>
                                     </span>
                                         Available for work
                                     </p>

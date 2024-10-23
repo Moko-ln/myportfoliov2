@@ -14,7 +14,7 @@ export const Social = () => {
                 {listSocial.map(item =>
                     <li key={item.id}>
                         <motion.button
-                            className="rounded-full h-8 w-8 border border-solid border-blue-400 bg-transparent p-2 flex items-center justify-center"
+                            className="rounded-full h-8 w-8 border border-solid border-slate-400 bg-transparent p-2 flex items-center justify-center"
                             whileHover={{ scale:1.145 }}
                             whileTap={{ scale:1.145 }}
 
@@ -24,7 +24,7 @@ export const Social = () => {
 
                             onClick={ () => handleClickPdf(item.link) }
                         >
-                            <span className="flex items-center justify-center text-blue-400 text-lg">{item.icon}</span>
+                            <span className="flex items-center justify-center text-slate-400 text-lg">{item.icon}</span>
                         </motion.button>
                     </li>
                 )}
