@@ -43,7 +43,7 @@ export const ExperienceBox = () => {
             <ul className="flex flex-col gap-8">
                 {dataExperience?.experiences.map((experience: dataExperiencePropType, index: number) =>
                     <li key={experience.id}
-                        className={`border border-slate-200 p-4 transition rounded-sm bg-slate-50 flex flex-wrap lg:flex-nowrap items-center gap-4`}
+                        className={`border border-slate-200 p-4 transition rounded-sm bg-transparent flex flex-wrap lg:flex-nowrap items-center gap-4`}
                         onMouseEnter={ () => handleClickChangeList(index) }
                     >
                         <div className="w-1/8 flex items-center justify-center">

@@ -33,7 +33,7 @@ export const dictionaryFr = {
             {
                 id: 32,
                 title: "Développeur FullStack",
-                periode: "Avril - Sept 2023",
+                periode: "Dec - Sept 2023",
                 enterprise: "Freelance",
                 logo: <FiBox />,
                 city: "Melun",
@@ -42,7 +42,7 @@ export const dictionaryFr = {
             {
                 id: 33,
                 title: "Développeur FrontEnd",
-                periode: "Mars - Aout 2022",
+                periode: "Sept - Aout 2022",
                 enterprise: "D\'or et de vin",
                 logo: <FiBell />,
                 city: "Paris",
@@ -166,7 +166,7 @@ export const dictionaryAng = {
             {
                 id: 32,
                 title: "FullStack developer",
-                periode: "April - Sept 2023",
+                periode: "Dec - Sept 2023",
                 enterprise: "Freelance",
                 logo: <FiBox />,
                 city: "Melun",
@@ -175,7 +175,7 @@ export const dictionaryAng = {
             {
                 id: 33,
                 title: "Front-End developer",
-                periode: "March - Aug 2022",
+                periode: "Sept - Aug 2022",
                 enterprise: "D\'or et de vin",
                 logo: <FiBell />,
                 city: "Paris",
