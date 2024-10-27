@@ -18,7 +18,7 @@ export const Hero = () => {
     return (
         <article className="min-h-screen flex justify-center">
             <div className="container-root w-full overflow-hidden">
-                <div className="xl:w-9/12 w-9/12 gap-10 flex flex-wrap mx-auto">
+                <div className="xl:w-9/12 w-10/12 gap-10 flex flex-wrap mx-auto">
                     <motion.div
                         className="xl:order-last order-first grow xl:fixed xl:top-0 xl:right-0 xl:min-h-screen xl:w-[650px] w-full flex flex-col items-start gap-10 xl:pt-20 justify-center overflow-hidden"
                         initial={{ opacity:0, x:100 }}

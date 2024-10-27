@@ -86,7 +86,7 @@ export const WorkBox = () => {
                                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                                 transition={{ type: "spring", duration:.5, ease:"easeIn", delay:.2 }}
                             >
-                                <div className={`rounded-2xl pt-10 px-10 overflow-hidden w-full relative flex justify-center ${item.bgColor}`}>
+                                <div className={`border border-slate-300 shadow-sm shadow-slate-200 rounded-2xl lg:pt-10 pt-0 lg:px-10 px-0 overflow-hidden w-full relative flex justify-center ${item.bgColor}`}>
                                     <Image
                                         src={`/uploads/${item.image}.webp`}
                                         alt={item.title}

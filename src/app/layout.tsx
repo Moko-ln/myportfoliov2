@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`flex flex-col ${lato.className} flex flex-col items-center` }>
-        <div className="fixed h-full lg:w-11/12 w-9/12 flex justify-between mx-auto">
+        <div className="fixed h-full lg:w-11/12 w-10/12 flex justify-between mx-auto">
           {[1,2].map(line =>
               <span key={line} className={`border lg:border-slate-200 border-slate-100 h-full ${ line === 2 ? "lg:hidden" : "block"}`}></span>
           )}
