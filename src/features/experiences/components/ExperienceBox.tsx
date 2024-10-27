@@ -49,7 +49,7 @@ export const ExperienceBox = () => {
                         <div className="w-1/8 flex items-center justify-center">
                             <span className="p-2 h-14 w-14 rounded-full flex items-center justify-center bg-slate-100 text-2xl text-slate-500">{experience.logo}</span>
                         </div>
-                        <div className="w-3/5 grow flex flex-col gap-2">
+                        <div className="w-4/5 grow flex flex-col gap-2">
                             <p className={`text-md text-700 ${montserrat.className}`}>{experience.title}</p>
                             {experience.linkEnterprise ?
                                 <Link href={`${experience.linkEnterprise}`} target="_blank" className="text-xs text-slate-700 underline">@{experience.enterprise}</Link>
