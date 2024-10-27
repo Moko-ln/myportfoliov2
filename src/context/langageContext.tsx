@@ -41,7 +41,7 @@ const LangageProvider: React.FC<MyComponentProps> = ({ children }) => {
     return (
         <LangageContext.Provider value={ dict }>
             <button
-                className={`fixed top-5 right-24 cursor-pointer border border-slate-300 h-8 px-4 rounded-sm text-sm text-slate-500 flex items-center gap-2 z-30`}
+                className={`fixed top-5 lg:right-24 right-16 cursor-pointer border border-slate-300 h-8 px-4 lg:bg-transparent bg-slate-50 rounded-sm text-sm text-slate-500 flex items-center gap-2 z-30`}
                 onClick={toggleLangage}
             >{ langage === "ang" ? "EN" : "FR"} <span><FiChevronDown /></span>
             </button>
