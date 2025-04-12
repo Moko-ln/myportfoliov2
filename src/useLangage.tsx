@@ -1,11 +1,11 @@
 "use client"
 
 import {useContext} from 'react';
-import {dataDictionaryPropType} from "@/type";
+import {langageContextType} from "@/type";
 import {LangageContext} from "@/context/langageContext";
 
-const useLangage = () : dataDictionaryPropType | null => {
-    const ctx: dataDictionaryPropType | null = useContext(LangageContext);
+const useLangage = () : langageContextType | null => {
+    const ctx: langageContextType | null = useContext(LangageContext);
 
     if (!ctx) new Error("useLangage must be used in LangageProvider");
 

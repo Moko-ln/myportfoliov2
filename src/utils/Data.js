@@ -2,6 +2,15 @@ import Image1 from "../assets/images/image1.jpg"
 import Image2 from "../assets/images/about.jpg"
 import Image3 from "../assets/images/banner.jpg"
 
+import ReactJS from "../assets/images/react_light.svg"
+import NextJs from "../assets/images/nextjs_icon_dark.svg"
+import TailWindCSS from "../assets/images/tailwindcss.svg"
+import TypeScript from "../assets/images/typescript.svg"
+
+
+import { FaGithub, FaInstagram } from "react-icons/fa"
+import { FiLinkedin } from "react-icons/fi"
+
 export const Data = [
     {
         id:1,
@@ -57,3 +66,54 @@ export const contentMentionsLegales = [
 ]
 
 export const langages = ["NextJs", "ReactJs", "TypeScript", "TailWindCSS"]
+
+export const socialList = [
+    {
+        id: 1,
+        title: "Github",
+        icon: <FaGithub/>,
+        link: "https://github.com/Moko-ln"
+
+    },
+    {
+        id: 2,
+        title: "LinkedIn",
+        icon: <FiLinkedin/>,
+        link: "https://www.linkedin.com/in/serge-lema-140953206/"
+
+    },
+    {
+        id: 3,
+        title: "Instagram",
+        icon: <FaInstagram/>,
+        link: "https://www.instagram.com/serges.codes/"
+
+    }
+]
+
+export const skillsList = [
+    {
+        id: 1,
+        title: "ReactJS",
+        image: ReactJS,
+
+    },
+    {
+        id: 2,
+        title: "TypeScript",
+        image: TypeScript,
+
+    },
+    {
+        id: 3,
+        title: "NextJs",
+        image: NextJs,
+
+    },
+    {
+        id: 4,
+        title: "TailWindCSS",
+        image: TailWindCSS,
+
+    },
+]

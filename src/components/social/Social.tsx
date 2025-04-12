@@ -1,20 +1,21 @@
 "use client"
 
-import {FaGithub, FaInstagram} from "react-icons/fa";
-import {FiLinkedin} from "react-icons/fi";
 import {motion} from "framer-motion";
+import { socialList } from "@/utils/Data";
+
 export const Social = () => {
 
     const handleClickPdf = (link: string) => {
         window.open(`${link}`, '_blank');
     }
+
     return (
         <div className="row-span-1 flex flex-col gap-4 items-start justify-center">
             <ul className="flex gap-4 items-center justify-around">
-                {listSocial.map(item =>
+                {socialList.map(item =>
                     <li key={item.id}>
                         <motion.button
-                            className="rounded-full h-8 w-8 border border-solid border-slate-400 bg-transparent p-2 flex items-center justify-center"
+                            className="rounded-full h-10 w-10 bg-black p-2 flex items-center justify-center"
                             whileHover={{ scale:1.145 }}
                             whileTap={{ scale:1.145 }}
 
@@ -24,7 +25,7 @@ export const Social = () => {
 
                             onClick={ () => handleClickPdf(item.link) }
                         >
-                            <span className="flex items-center justify-center text-slate-400 text-lg">{item.icon}</span>
+                            <span className="flex items-center justify-center text-slate-50 text-xl">{item.icon}</span>
                         </motion.button>
                     </li>
                 )}
@@ -34,26 +35,3 @@ export const Social = () => {
     )
 }
 
-const listSocial = [
-    {
-        id: 1,
-        title: "Github",
-        icon: <FaGithub/>,
-        link: "https://github.com/Moko-ln"
-
-    },
-    {
-        id: 2,
-        title: "LinkedIn",
-        icon: <FiLinkedin/>,
-        link: "https://www.linkedin.com/in/serge-lema-140953206/"
-
-    },
-    {
-        id: 3,
-        title: "Instagram",
-        icon: <FaInstagram/>,
-        link: "https://www.instagram.com/serges.codes/"
-
-    }
-]

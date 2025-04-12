@@ -1,19 +1,37 @@
+"use client"
+
 import Link from "next/link";
 import {Brand} from "@/components/header/Brand";
+import { Navbar } from "../header/Navbar";
+import { SwitchLangage } from "../atoms/button/SwitchLangage";
+import { Suspense } from "react";
+import { Burger } from "../header/Burger";
+import { MenuProvider } from "@/context/MenuContext";
 
 export const Header = () => {
+
     return (
-        <header className="z-20 h-20 flex w-full items-center justify-center">
-            <div className="container-root flex items-center w-full">
-                <div className="xl:w-9/12 w-9/12 gap-10 flex flex-wrap mx-auto items-center">
-                    <h1 className="w-16 h-16">
-                        <Link href="/" className={"w-16 h-16"}>
-                            <Brand />
-                        </Link>
-                    </h1>
+        <MenuProvider>
+            <header className="z-20 h-16 flex w-full lg:px-0 px-9 items-center justify-between gap-10 fixed top-0">
+                <h1 className="lg:w-[8.25rem] flex items-center justify-center">
+                    <Link href="/" className={"w-16 h-16"}>
+                        <Brand />
+                    </Link>
+                </h1>
+
+                <Navbar />
+
+                <div className="flex items-center gap-4">
+                    <Burger />
+                    <div className="lg:w-[8.25rem] flex items-center justify-center">
+                        <Suspense>
+                            <SwitchLangage />
+                        </Suspense>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
+        </MenuProvider>
+        
     )
 }
 

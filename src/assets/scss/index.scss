@@ -5,8 +5,6 @@
 @import './Variables';
 @import './Home';
 @import './Header';
-@import '../../features/works/assets/scss/Work';
-@import '../../features/experiences/assets/scss/Experience';
 
 html, body {
   font-size: 1.0rem;
@@ -38,4 +36,22 @@ html, body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+.anim_underline{
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+
+    width:20px;
+    height: 2px;
+    background: $light;
+    transition: width 0.5s ease-in-out;
+  }
+  &:hover::before{
+    width: 100%;
+  }
 }

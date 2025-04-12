@@ -1,0 +1,221 @@
+{
+    "navbar":[
+        {
+            "id": 1,
+            "title": "Projects",
+            "link": "/"
+          },
+          {
+            "id": 2,
+            "title": "About Me",
+            "link": "aboutme"
+          },
+          {
+            "id": 3,
+            "title": "Playground",
+            "link": "playground"
+          },
+          {
+            "id": 4,
+            "title": "Contact Me",
+            "link": "contactme"
+          }
+    ],
+    "hero":{
+        "title":"Hi! I am",
+        "subText":"Serge Lema",
+        "text": "A Front-End developer based in France. I'm passionnate on build things for the web"
+    },
+    "about":{
+        "title":"Hi! I am Serge Lema",
+        "content":"Frontend developer specialized in React, I design modern and high-performance web interfaces. From planning to deployment, I handle every stage of development to create smooth, responsive, and optimized experiences.",
+        "resume":{
+            "labelbtn":"My resume",
+            "link":"resume-en.pdf"
+        }
+    },
+    "projects":[
+        {
+            "id": 1,
+            "title": "Dive into the world of digital influence",
+            "nameproject": "Mobali-Lab",
+            "mainImage": "mobali",
+            "slug": "mobali-lab",
+            "content": "I designed and developed an immersive platform for Mobali-Lab, an innovative influence agency. This project showcases their campaigns, talents, and unique approach to influencer marketing through a modern and dynamic interface.",
+            "stack": ["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
+            "medias": ["mobalilab_campaigns", "mobalilab_talents", "mobalilab_studio", "mobalilab_campaign"],
+            "design": "Inspired by the dynamism and modern aesthetics of digital media, the platform offers a seamless and impactful experience, reflecting the energy and precision of Mobali-Lab's strategies.",
+            "website": "https://mblcorps.com/",
+            "customization": [
+                "Dynamic presentation of talents and influencers",
+                "Highlighting impactful campaigns and case studies",
+                "Smooth animations and transitions for an immersive experience",
+                "Responsive design for optimal accessibility across all screens"
+            ]
+        },
+        {
+            "id":2,
+            "title": "Welcome to the ISIA app!",
+            "nameproject":"Isia CNRS",
+            "mainImage":"isia",
+            "slug":"isia-cnrs",
+            "content": " designed and developed the redesign of the ISIA application, a management tool dedicated to research platforms in ecology. This project improved project proposal submissions and resource management, providing a modern and intuitive interface.",
+            "stack":["ReactJS", "TailwindCSS", "material UI", "Framer-Motion"],
+            "medias":["isia_first", "isia_landing","isia_select", "isia_catalog"],
+            "design": "Inspired by user-centered design principles, the application offers smooth navigation and a clean aesthetic, making it easier for researchers and administrators to access various features.",
+            "website":"https://isia.cnrs.fr/",
+           "customization": [
+                "Interactive and user-friendly project submission forms",
+                "Customized dashboards for tracking projects and resources",
+                "Real-time notifications for important updates",
+                "Responsive design ensuring optimal accessibility across various devices"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Explore Night City Through Its Heroes",
+            "nameproject": "Cyberpunk - Edgerunners",
+            "mainImage": "cyberpunk2",
+            "slug": "cyberpunk-edgerunners",
+            "content": "Dive into the world of Cyberpunk Edgerunners with an interactive landing page that I designed and developed using Next.js, offering a unique immersion into the anime's futuristic and rebellious aesthetics.",
+            "stack": ["NextJS", "Framer-Motion"],
+            "medias": ["cyberpunkfinal", "david", "lucy", "cyberpunkfirst"],
+            "design": "Inspired by the neon and high-tech atmosphere of Night City, the site features a smooth and immersive interface where every visual detail reflects the cyberpunk spirit.",
+            "website": "https://cyberpunk-edgerunners.netlify.app/",
+            "customization": [
+                "Dynamic character switching from the anime",
+                "Detailed descriptions of each hero",
+                "Smooth transitions and animations for an interactive experience",
+                "Responsive design for seamless adaptation on all screens"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Explore Night City Through Its Heroes",
+            "nameproject": "Sonic",
+            "mainImage": "Sonink",
+            "slug": "Sonic",
+            "content": "Sonic is a redesign project where I recreated 80% of Framer's landing page, modernizing its appearance and enhancing some animations for a smoother and more immersive experience. The goal was to refine my design and animation skills by exploring the capabilities of Framer Motion while using SCSS for styling.",
+            "stack": ["ReactJS", "SCSS", "Framer-Motion"],
+            "medias": ["sonink_landing", "sonic_first", "sonic_two", "sonic_third"],
+            "design": "The interface revisits the original design, adding a smoother and more interactive touch while maintaining the elegance and modernity of the initial concept.",
+            "website": "",
+            "customization": [
+                "Enhanced animations for better fluidity",
+                "Optimized dynamic transitions with Framer Motion",
+                "Visual redesign inspired by Framer's design",
+                "Use of SCSS for flexible and modular styling"
+            ]
+        }
+    ],
+    "footer":{
+        "legal":"Terms of use"
+    },
+    "contactme":{
+        "title":"Don't be shy. Make the first contact.",
+        "labelbtn":"Send",
+        "forms": {
+            "email": {
+                "text":"Email",
+                "required":"Please enter your email"
+            },
+            "subject": {
+                "text": "Select a subject",
+                "required":"Please select a subject",
+                "options": [
+                    {
+                        "id": 1,
+                        "text": "Collaboration / Project",
+                        "value": "collaboration"
+                    },
+                    {
+                        "id": 2,
+                        "text": "Job Opportunity",
+                        "value": "job"
+                    },
+                    {
+                        "id": 3,
+                        "text": "Request for Quotation",
+                        "value": "quotation"
+                    },
+                    {
+                        "id": 4,
+                        "text": "Question about a project",
+                        "value": "project-question"
+                    },
+                    {
+                        "id": 5,
+                        "text": "Development Consulting",
+                        "value": "consulting"
+                    },
+                    {
+                        "id": 6,
+                        "text": "Other",
+                        "value": "other"
+                    }
+                ]
+            },
+            "message": {
+                "text":"How can I help you?",
+                "required":"Please enter a message"
+            }
+        }
+    },
+    "button":{
+        "work":"Watch project",
+        "menu":["Menu", "Close"],
+        "scroll":"scroll Down"
+    },
+    "playground":{
+        "title":["Play", "Ground"],
+        "text":"A testing ground for quick projects, visual prototypes, or wild tech ideas. Here, anything goes—as long as it teaches me something or brings me joy"
+    },
+    "metadata":{
+        "title":"Serge Lema | ReactJS Developer & Designer",
+        "description":"Welcome to my portfolio – a space where I showcase my projects, creative vision, and tech experiments."
+    },
+    "termsofuse": {
+        "id":1,
+        "title": "Terms of use",
+        "link": "termsofuse",
+        "introduction": ["Website introduction","In accordance with article 6 of French law no. 2004-575 of June 21, 2004 on confidence in the digital economy, users of the www.sergelema.fr website are informed of the identity of the various parties involved in its creation and follow-up:"],
+        "creator": ["Creator","Serge lema"],
+        "manager":["Publication Manager","Serge Lema"],
+        "webmaster":["Webmaster","Serge Lema"],
+        "host":["Host","Vercel"],
+        "lists":[
+            {
+                "id": 1,
+                "title": "Intellectual Property",
+                "content": "The content of this site (texts, images, videos, etc.) is protected by copyright and belongs to Mobalicorps unless otherwise stated. Any unauthorized reproduction, distribution, or use is strictly prohibited."
+            },
+            {
+                "id": 2,
+                "title": "Collection of Personal Data",
+                "content": "Lemiza may collect personal data, such as name, first name, email, and address, when users fill out a contact form. This data will only be used for the purpose of providing the requested services. Lemiza does not share users' personal data with third parties without their consent."
+            },
+            {
+                "id": 3,
+                "title": "Cookies",
+                "content": "This site uses cookies to enhance the user experience. Cookies are small files stored on your device to collect information about how you interact with the site. You can manage cookies in your browser settings."
+            },
+            {
+                "id": 4,
+                "title": "Liability",
+                "content": "Lemiza cannot be held responsible for errors or omissions on the site. The information provided is for informational purposes only and may be modified without notice."
+            },
+            {
+                "id": 5,
+                "title": "External Links",
+                "content": "This site may contain links to external websites. Lemiza does not control these sites and disclaims any responsibility for their content."
+            },
+            {
+                "id": 6,
+                "title": "Disputes",
+                "content": "Any dispute related to the use of this site is subject to applicable laws."
+            }
+        ]
+    }
+
+    
+}

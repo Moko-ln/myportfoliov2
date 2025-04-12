@@ -1,43 +1,29 @@
 "use client"
-
 import Link from "next/link";
-import {FiChevronUp} from "react-icons/fi";
+import { Container } from "../atoms/Container";
 
+import { useDictionary } from "@/hooks/useDictionary";
 export const Footer = () => {
 
-    const handleScrollUp = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        })
-    }
+    const { dictionary } = useDictionary();
+
+
     return (
-        <footer className="py-2 z-10 relative w-full bg-slate-50">
-            <div className="container-root">
-                <div className="wrapper flex items-center justify-between gap-2">
-                    <div className="flex items-center justify-between">
-                        <p className="text-slate-500 text-sm">© 2024 Moko</p>
-                    </div>
-
-                    <div>
-                        <Link href={`/${infos.link}`} title={infos.title} className="text-slate-500 text-sm">
-                            {infos.title}
-                        </Link>
-                    </div>
-
-                    <button
-                        className="absolute flex items-center justify-center border bottom-0 rounded-t-full w-16 h-8 z-20 transform left-1/2 -translate-x-1/2"
-                        onClick={ () => handleScrollUp() }
-                    >
-                        <span className="text-slate-700 text-lg"><FiChevronUp /></span>
-                    </button>
-                </div>
-            </div>
+        <footer className="z-10 max-h-16 py-2 flex items-center w-full fixed bottom-0">
+            <Container>
+                <ul className="flex items-center text-slate-500 text-sm divide-x divide-slate-500">
+                    <li className="pl-2 pr-4">
+                        <p>©2025 Moko</p>
+                    </li>
+                    <li className="px-4">
+                        {dictionary && 
+                            <Link href={"/termsofuse"} className="hover:text-slate-500 ease-linear transition"
+                            >{dictionary && dictionary?.footer.legal }
+                            </Link>
+                        }
+                    </li>
+                </ul>
+            </Container>
         </footer>
     )
-}
-
-const infos = {
-    title: "Mentions legales",
-    link: "mentionslegales",
 }
