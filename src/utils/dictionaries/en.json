@@ -91,9 +91,9 @@
         },
         {
             "id": 4,
-            "title": "Explore Night City Through Its Heroes",
+            "title": "Sonic – UI/UX Redesign with Motion",
             "nameproject": "Sonic",
-            "mainImage": "Sonink",
+            "mainImage": "sonink",
             "slug": "Sonic",
             "content": "Sonic is a redesign project where I recreated 80% of Framer's landing page, modernizing its appearance and enhancing some animations for a smoother and more immersive experience. The goal was to refine my design and animation skills by exploring the capabilities of Framer Motion while using SCSS for styling.",
             "stack": ["ReactJS", "SCSS", "Framer-Motion"],
