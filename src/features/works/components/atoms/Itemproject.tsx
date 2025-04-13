@@ -38,7 +38,7 @@ export const Itemproject = ({ key, data }: itemProps) => {
         >
             {/* Animation d'entrée */}
             <motion.div
-                className="cursor-pointer relative h-[33rem] w-[55rem] overflow-hidden"
+                className="cursor-pointer relative lg:h-[33rem] lg:w-[55rem] h-[20rem] w-[40rem] overflow-hidden rounded-sm"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ type:"spring", stiffness:200, damping:25, duration: 0.6 }}
@@ -52,8 +52,10 @@ export const Itemproject = ({ key, data }: itemProps) => {
                         src={`/uploads/${data.mainImage}.webp`}
                         alt={data.nameproject}
                         fill
-                        objectFit="cover"
-                        quality={75}
+                
+                        quality={100}
+
+                        className="w-full h-full object-cover rounded-sm"
                     />
                 </motion.div>
 

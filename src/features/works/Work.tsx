@@ -1,6 +1,5 @@
 import { Container } from "@/components/atoms/Container"
 import { Projectlist } from "./components/organisms/ProjectList"
-import { ScrollDown } from "@/components/atoms/button/Scroll"
 import { Article } from "@/components/atoms/Article"
 
 export const Work = () => {
@@ -10,7 +9,6 @@ export const Work = () => {
             <Container>
                 <Projectlist />
             </Container>
-            {/* <ScrollDown /> */}
         </Article>
     )
 }

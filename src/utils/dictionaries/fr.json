@@ -164,7 +164,7 @@
     },
     "button":{
         "work":"Voir le projet",
-        "menu":["Menu", "Fermé"],
+        "menu":["Menu", "Fermer"],
         "scroll":"Défiler vers le bas"
     },
     "playground":{

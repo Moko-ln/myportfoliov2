@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useDictionary } from "@/hooks/useDictionary";
 import { usePathname } from "next/navigation";
 import { useMenu } from "@/hooks/useMenu";
+import { FiXCircle } from "react-icons/fi";
 
 export const Navbar = () => {
     const { dictionary } = useDictionary();
@@ -75,6 +76,8 @@ export const Navbar = () => {
                         transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         className="lg:hidden shadow-lg shadow-slate-900 flex items-center justify-center bg-white fixed bottom-0 w-full left-0 h-[50vh] rounded-t-3xl"
                     >
+
+                        <button onClick={handleCloseMenu} className="absolute top-2 text-2xl text-slate-500"><FiXCircle /></button>
                         <ul className="flex flex-col items-center gap-4 w-full">
                             { dictionary?.navbar?.map( (item:any) =>
                                 (currentPath === item.link || (isRoot && item.link === '/')) ? (

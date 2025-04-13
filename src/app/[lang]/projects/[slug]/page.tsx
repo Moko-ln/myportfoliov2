@@ -98,15 +98,15 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <ul className="flex flex-col gap-10">
                     { data?.medias?.map((item:string, index:number) => 
                         <li key={index+1}>
-                            <motion.div className="relative lg:h-[33rem] lg:w-[53rem] md:w-[40rem] md:h-[23rem] h-[15rem] w-[22rem]">
+                            <motion.div className="relative lg:h-[33rem] lg:w-[53rem] md:w-[40rem] md:h-[23rem] h-[15rem] w-[22rem] rounded-sm">
                                 <Image
                                     src={`/uploads/${item}.webp`} 
                                     alt={data?.nameproject}
                                     fill
                                 
-                                    quality={75}
+                                    quality={100}
 
-                                    className="w-full h-full lg:object-cover object-contain"
+                                    className="w-full h-full lg:object-cover object-cover"
                                 />
                             </motion.div>  
                         </li>

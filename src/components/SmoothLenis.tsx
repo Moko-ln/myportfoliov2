@@ -29,5 +29,5 @@ export const SmoothLenis = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
-  return <main className="z-10 w-full touch-auto relative">{children}</main>;
+  return <main className={` z-10 w-full touch-auto relative overflow-y-auto overflow-x-hidden`}>{children}</main>;
 }

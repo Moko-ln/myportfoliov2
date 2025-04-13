@@ -41,7 +41,7 @@ export default function RootLayout({
 
   return (
     <html lang={lang} dir={lang === "fr" ? "ltr" : "ltr"}>
-      <body className={`flex flex-col ${lato.className} items-center overflow-hidden`}>
+      <body className={`flex flex-col ${lato.className} items-center`}>
           <LangProvider lang={lang}>
             <DictionaryProvider>
               <Header />
