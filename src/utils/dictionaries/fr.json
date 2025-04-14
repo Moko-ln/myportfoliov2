@@ -216,5 +216,8 @@
                 "content": "Tout litige relatif à l’utilisation de ce site est soumis aux lois en vigueur."
             }
         ]
+    },
+    "message":{
+        "error":"Cette page est encore en construction"
     }
 }

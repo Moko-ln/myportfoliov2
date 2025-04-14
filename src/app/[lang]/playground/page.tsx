@@ -5,9 +5,21 @@ import { Container } from "@/components/atoms/Container";
 import { montserrat, poppins } from "@/font/Fonts";
 import { useDictionary } from "@/hooks/useDictionary";
 import { motion } from "framer-motion";
+import { toast } from "sonner";
+import { useEffect, useRef } from "react";
 
 export default function Playground() {
     const { dictionary }  = useDictionary();
+    const toastShown = useRef(false);
+
+    useEffect(() => {
+        if (!toastShown.current && dictionary?.message?.error) {
+            toastShown.current = true;
+            toast.info(dictionary.message.error, {
+                duration: 4000,
+            });
+        }
+    }, [dictionary]);
 
     return (
         <Article className="flex items-center justify-center">

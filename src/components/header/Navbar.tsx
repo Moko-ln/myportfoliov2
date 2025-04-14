@@ -21,7 +21,7 @@ export const Navbar = () => {
     
     // Check if we're on root path
     const isRoot = currentPath === '';
-    
+
     return (
         <>
             <nav className="lg:block hidden grow lg:w-[calc(100% - 6.25rem)]">
