@@ -38,7 +38,7 @@ export const Itemproject = ({ key, data }: itemProps) => {
         >
             {/* Animation d'entrée */}
             <motion.div
-                className="cursor-pointer relative lg:h-[33rem] lg:w-[55rem] h-[20rem] w-[40rem] overflow-hidden rounded-sm"
+                className="cursor-pointer relative overflow-hidden rounded-sm h-[70vh]"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ type:"spring", stiffness:200, damping:25, duration: 0.6 }}
@@ -47,18 +47,19 @@ export const Itemproject = ({ key, data }: itemProps) => {
                 onClick={() => handleClick(data?.slug)}
             >
                 {/* Image avec effet d'ondulation */}
-                <motion.div className="absolute inset-0" style={{ scale: 1.2 }}>
-                    <Image
-                        src={`/uploads/${data.mainImage}.webp`}
-                        alt={data.nameproject}
-                        fill
-                
-                        quality={100}
+   
+                <Image
+                    src={`/uploads/${data.mainImage}.jpg`}
+                    alt={data.nameproject}
+                    
+                    width={1080}
+                    height={1920}
 
-                        className="w-full h-full object-cover rounded-sm"
-                    />
-                </motion.div>
+                    quality={100}
 
+                    className="w-full h-full object-contain rounded-sm"
+                />
+            
                 {/* Texte animé */}
                 <motion.div
                     className={`absolute bottom-8 left-8 text-white text-4xl font-black ${montserrat.className}`}

@@ -37,7 +37,7 @@
     "projects":[
         {
             "id": 1,
-            "title": "Plongez dans l'univers de l'influence digitale",
+            "title": "Plongez dans un monde rempli de bulles.",
             "nameproject": "Mobali-Lab",
             "mainImage": "mobali",
             "slug": "mobali-lab",
@@ -75,7 +75,7 @@
             "id":3,
             "title":"Découvrez Night City à travers ses héros",
             "nameproject":"Cyberpunk - Edgerunners",
-            "mainImage":"cyberpunk2",
+            "mainImage":"cyberpunk",
             "slug":"cyberpunk-edgerunners",
             "content":"Plongez dans l’univers Cyberpunk Edgerunners avec une landing page interactive, que j’ai conçue et développée avec Next.js, offrant une immersion unique dans l’esthétique futuriste et rebelle de l’anime.",
             "stack":["NextJS", "Framer-Motion"],
@@ -94,7 +94,7 @@
             "id": 4,
             "title": "Sonic – Refonte UI/UX avec animations",
             "nameproject": "Sonic",
-            "mainImage": "sonink",
+            "mainImage": "sonic",
             "slug": "Sonic",
             "content": "Sonic est un projet de redesign où j’ai recréé la landing page de Framer à 80%, en modernisant son apparence et en améliorant certaines animations pour une expérience plus fluide et immersive. L’objectif était de perfectionner mes compétences en design et en animation en explorant les capacités de Framer Motion tout en utilisant SCSS pour le style.",
             "stack": ["ReactJS", "SCSS", "Framer-Motion"],

@@ -83,6 +83,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                     <Image 
                         src={`/uploads/${data?.mainImage}.webp`}
                         fill
+                        quality={100}
                         alt={data?.nameproject}
                         className="w-full h-full object-cover"
                     />
