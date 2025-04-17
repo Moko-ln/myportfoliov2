@@ -58,7 +58,7 @@ export default function RootLayout({
                 ))}
               </div>
               <Footer />
-              <Toaster richColors position="bottom-right" />
+              <Toaster position="bottom-center" />
             </DictionaryProvider>
           </LangProvider>
       </body>

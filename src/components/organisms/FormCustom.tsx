@@ -41,10 +41,10 @@ export const FormCustom = ({ labelbtn }: { labelbtn: string }) => {
         setLoading(false);
 
         if (response.success) {
-            setFeedback({ success: true, message: "Message bien reçu ! Je vais vous contacter sous peu." });
+            setFeedback({ success: true, message: dictionary?.message.successResponse });
             reset();
         } else {
-            setFeedback({ success: false, message: response.error || "Oups… Une erreur s’est produite. Veuillez réessayer plus tard." });
+            setFeedback({ success: false, message: response.error || dictionary?.message.errorResponse });
         }
     };
 

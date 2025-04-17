@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
+import ReactLenis from "lenis/react";
 
 export const SmoothLenis = ({ children }: { children: React.ReactNode }) => {
   const lenisRef = useRef<Lenis | null>(null);
@@ -21,7 +22,7 @@ export const SmoothLenis = ({ children }: { children: React.ReactNode }) => {
       lenis.destroy();
       lenisRef.current = null;
     };
-  }, [])
+  }, []);
 
   useEffect(() => {
     if (lenisRef.current) {
@@ -29,5 +30,9 @@ export const SmoothLenis = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
-  return <main className={` z-10 w-full touch-auto relative overflow-y-auto overflow-x-hidden`}>{children}</main>;
+  return (
+    <ReactLenis root options={{ autoRaf: false }}>
+      <main className={`z-10 w-full touch-auto relative overflow-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]`}>{children}</main>
+    </ReactLenis>
+  );
 }

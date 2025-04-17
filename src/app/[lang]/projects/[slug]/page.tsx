@@ -45,7 +45,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <div className="absolute z-10 lg:top-32 top-96 left-0 lg:w-1/2 h-1/2 lg:pl-20 flex flex-col gap-4">
                     <div className="flex flex-col">
                         <motion.h2 
-                            className={`${montserrat.className} lg:text-7xl text-4xl font-black text-slate-50`}
+                            className={`${montserrat.className}  lg:text-7xl text-4xl font-black text-slate-50`}
                             initial={{ y:25 }}
                             animate={{ y:0 }}
                             transition={{ type: "spring", stiffness: 50, damping:10 }}    

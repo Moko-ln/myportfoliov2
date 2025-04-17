@@ -75,7 +75,7 @@
             "id": 3,
             "title": "Explore Night City Through Its Heroes",
             "nameproject": "Cyberpunk - Edgerunners",
-            "mainImage": "cyberpunk2",
+            "mainImage": "cyberpunk",
             "slug": "cyberpunk-edgerunners",
             "content": "Dive into the world of Cyberpunk Edgerunners with an interactive landing page that I designed and developed using Next.js, offering a unique immersion into the anime's futuristic and rebellious aesthetics.",
             "stack": ["NextJS", "Framer-Motion"],
@@ -93,7 +93,7 @@
             "id": 4,
             "title": "Sonic – UI/UX Redesign with Motion",
             "nameproject": "Sonic",
-            "mainImage": "sonink",
+            "mainImage": "sonic",
             "slug": "Sonic",
             "content": "Sonic is a redesign project where I recreated 80% of Framer's landing page, modernizing its appearance and enhancing some animations for a smoother and more immersive experience. The goal was to refine my design and animation skills by exploring the capabilities of Framer Motion while using SCSS for styling.",
             "stack": ["ReactJS", "SCSS", "Framer-Motion"],
@@ -217,7 +217,11 @@
         ]
     },
     "message":{
-        "error":"This page is still under construction"
+        "error":"This page is still under construction",
+        "errorEmail":"Tell to me more! (min. 10 characters).",
+        "errorContent":"Enter a valid e-mail address so I can reply!",
+        "errorResponse":"Oops... An error has occurred. Please try again later.",
+        "successResponse":"Message received! I'll be in touch shortly."
     }
 
     

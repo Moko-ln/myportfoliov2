@@ -218,6 +218,10 @@
         ]
     },
     "message":{
-        "error":"Cette page est encore en construction"
+        "error":"Cette page est encore en construction",
+        "errorEmail":"Entrez une adresse e-mail valide pour que je puisse vous répondre !",
+        "errorContent":"Dites-moi en un peu plus ! (min. 10 caractères).",
+        "errorResponse":"Oups… Une erreur s’est produite. Veuillez réessayer plus tard.",
+        "successResponse":"Message bien reçu ! Je vais vous contacter sous peu."
     }
 }

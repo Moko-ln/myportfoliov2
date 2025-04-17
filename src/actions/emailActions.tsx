@@ -3,16 +3,16 @@
 import nodemailer from "nodemailer";
 import { z } from "zod";
 
-// Validation des données avec Zod
+// // Validation des données avec Zod
 const emailSchema = z.object({
     email: z.string().email("Entrez une adresse e-mail valide pour que je puisse vous répondre !"),
-    message: z.string().min(10, "Dites-moi en un peu plus ! (min. 10 caractères)."),
+    message: z.string().min(10, "Dites-moi en un peu plus ! (min. 10 caractères)"),
 });
 
 export async function sendEmail({ email, message, subject }: { email: string; message: string, subject:string }) {
     // Vérifier si les données sont valides
     const validation = emailSchema.safeParse({ email, message });
-    
+
     if (!validation.success) {
         return { success: false, error: validation.error.errors[0].message };
     }
