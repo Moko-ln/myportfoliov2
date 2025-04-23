@@ -28,7 +28,7 @@
     },
     "about":{
         "title":"Salut! c'est Serge Lema",
-        "content":"Développeur frontend spécialisé en React, je conçois des interfaces web modernes et performantes. De la planification au déploiement, je prends en charge chaque étape du développement pour créer des expériences fluides, réactives et optimisées.",
+        "content":"Passionné par la création d’interfaces web modernes, je combine mes compétences en développement React et en design pour concevoir des expériences utilisateur intuitives et performantes. De la conception des maquettes à l’intégration des composants, je m’assure que chaque projet allie esthétique et fonctionnalité.",
         "resume":{
             "labelbtn":"Mon cv",
             "link":"resume-fr.pdf"

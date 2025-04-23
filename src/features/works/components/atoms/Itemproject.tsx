@@ -6,9 +6,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
-import { Paragraph } from "@/components/atoms/Paragraph";
 import { Heading } from "@/components/atoms/Heading";
-import Lenis from "lenis";
 import { ScrollDown } from "@/components/atoms/button/Scroll";
 
 type itemProps = {
@@ -23,7 +21,6 @@ export const Itemproject = ({ key, data }: itemProps) => {
         offset: ["start end", "end end"],
     });
 
-    const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
     const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
     const y = useTransform(scrollYProgress, [0, 1], [100, 0]);
 
@@ -54,7 +51,7 @@ export const Itemproject = ({ key, data }: itemProps) => {
                 initial={{ scale: 0.8 }}
                 animate={{ scale: 1 }}
                 transition={{ type:"spring", stiffness:200, damping:25, duration: 0.6 }}
-                style={{ opacity, scale, y }}
+                style={{ scale, y }}
 
                 onClick={() => handleClick(data?.slug)}
             >
