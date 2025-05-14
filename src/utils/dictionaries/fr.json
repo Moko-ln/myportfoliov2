@@ -218,7 +218,7 @@
         ]
     },
     "message":{
-        "error":"Cette page est encore en construction",
+        "error":"Aucun projet pour le moment",
         "errorEmail":"Entrez une adresse e-mail valide pour que je puisse vous répondre !",
         "errorContent":"Dites-moi en un peu plus ! (min. 10 caractères).",
         "errorResponse":"Oups… Une erreur s’est produite. Veuillez réessayer plus tard.",

@@ -217,12 +217,10 @@
         ]
     },
     "message":{
-        "error":"This page is still under construction",
+        "error":"No project at the moment",
         "errorEmail":"Tell to me more! (min. 10 characters).",
         "errorContent":"Enter a valid e-mail address so I can reply!",
         "errorResponse":"Oops... An error has occurred. Please try again later.",
         "successResponse":"Message received! I'll be in touch shortly."
     }
-
-    
 }

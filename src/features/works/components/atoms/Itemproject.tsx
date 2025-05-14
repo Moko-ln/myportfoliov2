@@ -2,7 +2,7 @@
 
 import { montserrat } from "@/font/Fonts";
 import { dictWorkPropType } from "@/type";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useMotionTemplate, useMotionValue, useScroll, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
@@ -15,14 +15,23 @@ type itemProps = {
 };
 
 export const Itemproject = ({ key, data }: itemProps) => {
+
     const refItem = useRef<HTMLLIElement>(null);
     const { scrollYProgress } = useScroll({
         target: refItem,
         offset: ["start end", "end end"],
     });
 
-    const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-    const y = useTransform(scrollYProgress, [0, 1], [100, 0]);
+    const saturate = useMotionValue(80)
+
+    const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
+
+    const filter = useMotionTemplate`saturate(${saturate}%)`
+
+    const rotate = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
+    const y = useTransform(scrollYProgress, [0, 1], [50, 0]);
+
 
     const router = useRouter();
 
@@ -31,7 +40,7 @@ export const Itemproject = ({ key, data }: itemProps) => {
     };
 
     return (
-        <li
+        <motion.li
             key={key}
             className="h-screen w-full flex items-center justify-center rounded-sm relative"
             ref={refItem}
@@ -47,13 +56,15 @@ export const Itemproject = ({ key, data }: itemProps) => {
             </motion.div>
             {/* Animation d'entrée */}
             <motion.div
-                className="cursor-pointer relative overflow-hidden rounded-sm h-[70vh]"
+                className="cursor-pointer relative overflow-hidden rounded-sm h-[60vh]"
                 initial={{ scale: 0.8 }}
                 animate={{ scale: 1 }}
-                transition={{ type:"spring", stiffness:200, damping:25, duration: 0.6 }}
-                style={{ scale, y }}
-
+                transition={{ type: "spring", stiffness: 80, damping: 18 }}
+                style={{ rotate, y, filter, opacity }}
                 onClick={() => handleClick(data?.slug)}
+
+                whileHover={{scale:0.945}}
+                whileTap={{scale:1.045}}
             >
                 {/* Image avec effet d'ondulation */}
                 <Image
@@ -68,8 +79,6 @@ export const Itemproject = ({ key, data }: itemProps) => {
                     className="w-full h-full object-contain rounded-sm"
                 />
             </motion.div>
-
-            {data.id === 1 && <ScrollDown />}
-        </li>
+        </motion.li>
     );
 };
