@@ -27,8 +27,8 @@
         "text": "A Front-End developer based in France. I'm passionnate on build things for the web"
     },
     "about":{
-        "title":"Hi! I am Serge Lema",
-        "content":"Passionate about crafting modern web interfaces, I blend my React development skills with design expertise to create intuitive and high-performing user experiences. From wireframing to component integration, I ensure each project harmoniously combines aesthetics and functionality.",
+        "title":"React Developer",
+        "content":"Serge Lema crafts high-performance React interfaces focused on delivering smooth and intuitive user experiences.",
         "resume":{
             "labelbtn":"My resume",
             "link":"resume-en.pdf"
@@ -112,7 +112,7 @@
         "legal":"Terms of use"
     },
     "contactme":{
-        "title":"Don't be shy. Make the first contact.",
+        "title":"Let’s Work Together",
         "labelbtn":"Send",
         "forms": {
             "email": {
@@ -222,5 +222,15 @@
         "errorContent":"Enter a valid e-mail address so I can reply!",
         "errorResponse":"Oops... An error has occurred. Please try again later.",
         "successResponse":"Message received! I'll be in touch shortly."
+    },
+    "notfound":{
+        "title":"Page not found",
+        "link":"Back to homepage"
+    },
+    "errorpage":{
+        "title":"Oops! Something went wrong.",
+        "subTitle":"The page you’re looking for doesn’t exist or something broke. Let’s get you back on track.",
+        "page":"error",
+        "link":"Reset page"
     }
 }

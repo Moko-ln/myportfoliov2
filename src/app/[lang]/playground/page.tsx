@@ -25,7 +25,7 @@ export default function Playground() {
         <Article className="flex items-center justify-center">
             <Container className="flex items-center justify-center">
                 <div className="max-w-xl">
-                    <motion.h2 className={`lg:text-8xl text-7xl font-black ${montserrat.className}`}>
+                    <motion.h2 className={`lg:text-8xl text-5xl font-black ${montserrat.className}`}>
                         <span className="block">{dictionary?.playground.title[0]}</span>
                         {dictionary?.playground.title[1]}
                     </motion.h2>

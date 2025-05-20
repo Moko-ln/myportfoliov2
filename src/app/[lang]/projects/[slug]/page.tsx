@@ -41,8 +41,9 @@ export default function Page({ params }: { params: { slug: string } }) {
 
     return (
         <Article className="flex flex-col lg:gap-20" scale={false}>
-            <Container className="lg:h-[80vh] h-screen relative">
-                <div className="absolute z-10 lg:top-32 top-96 left-0 lg:w-1/2 h-1/2 lg:pl-20 flex flex-col gap-4">
+            <Container className="lg:h-[80vh] h-screen lg:w-10/12 w-full relative">
+
+                <div className="absolute z-10 lg:top-32 top-96 left-10 lg:w-1/2 w-2/3 h-1/2 lg:pl-20 flex flex-col gap-4">
                     <div className="flex flex-col">
                         <motion.h2 
                             className={`${montserrat.className}  lg:text-7xl text-4xl font-black text-slate-50`}
@@ -78,7 +79,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                         />
                     }
                 </div>
-
+    
                 <div className="w-full lg:h-[80vh] h-screen relative">
                     <Image 
                         src={`/uploads/${data?.mainImage}.webp`}
@@ -137,7 +138,7 @@ export default function Page({ params }: { params: { slug: string } }) {
             </Container>
 
             { nextProject && 
-                <Container className="relative overflow-hidden">
+                <Container className="relative overflow-hidden lg:w-10/12 w-full">
                     <motion.div 
                         className="cursor-pointer w-full h-[80vh] relative"
                         whileHover={{ scale: 1.05 }} // Légère augmentation au survol

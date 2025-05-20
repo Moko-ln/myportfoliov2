@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import type { PluginAPI } from 'tailwindcss/types/config'
+
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
@@ -11,6 +13,20 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }: PluginAPI) {
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar":{
+          display:"none",
+        },
+        ".noscrollbar":{
+          "-ms-overflow-style": "none",
+          "-scrollbar-width": "none"
+        }
+      }
+
+      addUtilities(newUtilities)
+    }
+  ],
   darkMode: 'selector',
 }

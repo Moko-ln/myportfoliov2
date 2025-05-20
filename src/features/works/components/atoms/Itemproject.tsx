@@ -7,7 +7,6 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useRouter } from "next/navigation";
 import { Heading } from "@/components/atoms/Heading";
-import { ScrollDown } from "@/components/atoms/button/Scroll";
 
 type itemProps = {
     key: number;
@@ -56,28 +55,35 @@ export const Itemproject = ({ key, data }: itemProps) => {
             </motion.div>
             {/* Animation d'entrée */}
             <motion.div
-                className="cursor-pointer relative overflow-hidden rounded-sm h-[60vh]"
+                className="cursor-pointer relative overflow-hidden rounded-sm lg:h-[60vh] h-[50vh]"
+
                 initial={{ scale: 0.8 }}
                 animate={{ scale: 1 }}
                 transition={{ type: "spring", stiffness: 80, damping: 18 }}
                 style={{ rotate, y, filter, opacity }}
                 onClick={() => handleClick(data?.slug)}
-
-                whileHover={{scale:0.945}}
-                whileTap={{scale:1.045}}
             >
-                {/* Image avec effet d'ondulation */}
-                <Image
-                    src={`/uploads/${data.mainImage}.jpg`}
-                    alt={data.nameproject}
-                    
-                    width={1024}
-                    height={1920}
 
-                    quality={75}
+                <motion.div
+                    className=" h-full w-full"
+                    whileHover={{scale:1.045}}
+                    whileTap={{scale:1.045}} 
+                    transition={{ type: "spring", duration:0.9, ease:"easeInOut" }} 
+                >
+                   {/* Image avec effet d'ondulation */}
+                    <Image
+                        src={`/uploads/${data.mainImage}.jpg`}
+                        alt={data.nameproject}
+                        
+                        width={1024}
+                        height={1920}
 
-                    className="w-full h-full object-contain rounded-sm"
-                />
+                        quality={75}
+
+                        className="w-full h-full object-contain rounded-sm"
+                    /> 
+                </motion.div>
+                
             </motion.div>
         </motion.li>
     );

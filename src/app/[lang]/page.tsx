@@ -2,7 +2,7 @@
 
 import { Work } from "@/features/works/Work";
 
-export default function Home() {
+export default function page() {
   
   return (
     <Work />

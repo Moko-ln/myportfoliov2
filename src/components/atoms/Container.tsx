@@ -1,8 +1,9 @@
 import { containerTypeProp } from "@/type"
+import { twMerge } from "tailwind-merge"
 
-export const Container = ({ className, children }: containerTypeProp) => {
+export const Container = ({ className, children,  }: containerTypeProp) => {
     return (
-        <div className={`${className} w-10/12 mx-auto`}>  
+        <div className={twMerge(`w-10/12  mx-auto`, className)}>  
             { children }
         </div>
     )

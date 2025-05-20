@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 
 import { toast } from "sonner";
 import { useDictionary } from "@/hooks/useDictionary";
+import { ListCustom } from "./ListCustom";
+import { socialList } from "@/utils/Data";
 
 type InputsTypeProp = {
     email: string;
@@ -84,24 +86,29 @@ export const FormCustom = ({ labelbtn }: { labelbtn: string }) => {
                     className={`${errors.message ? "border-red-500 placeholder-red-500" : "lg:border-slate-200 border-slate-400 text-slate-700"} p-2 w-full h-32 focus:outline-none rounded-sm border`}
                 />
             </div>
-
-            <motion.button 
-                className={`${montserrat.className} group bg-white relative flex items-center border border-slate-400 rounded-full w-40 px-4 lg:h-12 h-14 justify-center`}
-                initial={{ scale: .95 }} 
-                animate={{ scale: 1 }}
-                transition={{ type: "spring", stiffness: 100, damping: 25 }}
-                type="submit"
-                disabled={loading}
-            >
-                <motion.span 
-                    className="bg-white flex items-center justify-center w-full gap-2 min-w-40 px-4 lg:h-12 h-14 border border-slate-400 z-0 rounded-full"
-                    initial={{ y: 10, x: 10 }} 
-                    whileHover={{ y: 0, x: 0 }}
+            
+            <div className="flex gap-10">
+                <motion.button 
+                    className={`${montserrat.className} group bg-white relative flex items-center border border-slate-400 rounded-full w-40 px-4 lg:h-12 h-14 justify-center`}
+                    initial={{ scale: .95 }} 
+                    animate={{ scale: 1 }}
+                    transition={{ type: "spring", stiffness: 100, damping: 25 }}
+                    type="submit"
+                    disabled={loading}
                 >
-                    { loading ? `${labelbtn}...` : labelbtn } 
-                    { !loading && <span className="group-hover:text-slate-300 group-hover:rotate-45 transition ease-linear"><FiArrowUpRight /></span> }
-                </motion.span>
-            </motion.button>
+                    <motion.span 
+                        className="bg-white flex items-center justify-center w-full gap-2 min-w-40 px-4 lg:h-12 h-14 border border-slate-400 z-0 rounded-full"
+                        initial={{ y: 10, x: 10 }} 
+                        whileHover={{ y: 0, x: 0 }}
+                    >
+                        { loading ? `${labelbtn}...` : labelbtn } 
+                        { !loading && <span className="group-hover:text-slate-300 group-hover:rotate-45 transition ease-linear"><FiArrowUpRight /></span> }
+                    </motion.span>
+                </motion.button>
+
+                <ListCustom data={socialList} />
+            </div>
+            
         </motion.form>
     );
 };

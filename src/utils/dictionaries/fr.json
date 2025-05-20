@@ -27,8 +27,8 @@
         "text": "Développeur Front-End basé en France. Je suis passionné par la création de projets pour le web."
     },
     "about":{
-        "title":"Salut! c'est Serge Lema",
-        "content":"Passionné par la création d’interfaces web modernes, je combine mes compétences en développement React et en design pour concevoir des expériences utilisateur intuitives et performantes. De la conception des maquettes à l’intégration des composants, je m’assure que chaque projet allie esthétique et fonctionnalité.",
+        "title":"Développeur React",
+        "content":"Serge Lema conçoit des interfaces React performantes, pensées pour offrir une expérience utilisateur fluide et intuitive.",
         "resume":{
             "labelbtn":"Mon cv",
             "link":"resume-fr.pdf"
@@ -113,7 +113,7 @@
         "legal":"Mentions Légales"
     },
     "contactme":{
-        "title":"N'ayez pas peur. Faites le premier pas.",
+        "title":"Travaillons ensemble",
         "labelbtn":"Envoyer",
         "forms":{
             "email": {
@@ -223,5 +223,15 @@
         "errorContent":"Dites-moi en un peu plus ! (min. 10 caractères).",
         "errorResponse":"Oups… Une erreur s’est produite. Veuillez réessayer plus tard.",
         "successResponse":"Message bien reçu ! Je vais vous contacter sous peu."
+    },
+    "notfound":{
+        "title":"Page introuvable",
+        "link":"Retour à la page d'accueil"
+    },
+    "errorpage":{
+        "title":"Oups ! Une erreur s’est produite.",
+        "subTitle":"La page que vous cherchez n’existe pas ou un problème est survenu. Revenons à la bonne direction.",
+        "page":"Erreur",
+        "link":"Réinitialiser la page"
     }
 }
