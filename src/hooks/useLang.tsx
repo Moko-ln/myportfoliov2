@@ -9,4 +9,4 @@ export const useLang = () => {
       throw new Error("useLang must be used within a LangProvider");
     }
     return context;
-  };
+};

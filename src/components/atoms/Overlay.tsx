@@ -1,11 +1,19 @@
+"use client";
 
-type overlayProps = {
-    className:string
-}
+import { useMenu } from "@/hooks/useMenu";
 
-export const Overlay = ({ className}:overlayProps) => {
+export const Overlay = ({className}:{className?: string}) => {
+    
+    const menuContext = useMenu();
 
     return (
-        <div className={`${className} absolute h-full from-black/50 to-transparent w-1/2`}></div>
+        <>
+            { menuContext?.open && 
+                <div
+                    className={`fixed z-20 inset-0 bg-black bg-opacity-50 ${className}`}
+                    onClick={() => menuContext?.setOpen(false)}
+                />
+            }
+        </>
     )
 }

@@ -91,6 +91,7 @@ export type dictWorkPropType =  {
     title:string;
     nameproject: string;
     mainImage: string;
+    miniature:string;
     content:string;
     slug:string;
     stack?:string[];
@@ -116,6 +117,7 @@ export interface langageContextType {
     langage: string,
     dict: dataDictionaryPropType | null,
     toggleLangage: () => void;
+    setLangage: (langage: string) => void;
 }
 
 export type paragraphTypeProp =  {
@@ -138,6 +140,7 @@ export type bannerType = {
 export type articleTypeProp = {
     className?: string;
     children: React.ReactNode;
+    isSnap?:boolean;
     scale?:boolean;
 }
 
@@ -168,4 +171,49 @@ export type burgerPropType = {
     open:boolean,
     setOpen:React.Dispatch<React.SetStateAction<boolean>>,
     handleMenu: () => void
+}
+
+// Theme
+export type themeType = {
+    theme: "light" | "dark",
+    toggleTheme: () => void
+}
+
+// Form
+export interface inputTypeProps {
+    name: "email" | "fullname" | "subject" | "message",
+    className?:string;
+    required:string; 
+    placeholder:string; 
+    register:any;
+    error:any;
+    error_message:any;
+    invalidEmailMessage?:any;
+}
+
+export interface labelPropType {
+    name: "email" | "fullname" | "subject" | "message";
+    className?:string;
+    label:string;
+    error:any;
+}
+
+export type inputsInitialTypeProp = {
+    email: string;
+    fullname:string;
+    message: string;
+    subject:string;
+};
+
+export interface galeryProjectPropType {
+    title:string; 
+    design:string; 
+    medias:string[]; 
+    nameproject:string; 
+    customization:string[]
+}
+
+export interface NextPrevProjectPropType {
+    slug:string;
+    projects:any;
 }

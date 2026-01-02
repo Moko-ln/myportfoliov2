@@ -2,6 +2,7 @@
 import type { PluginAPI } from 'tailwindcss/types/config'
 
 module.exports = {
+  darkMode: "class",
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}', // Note the addition of the `app` directory.
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -28,5 +29,4 @@ module.exports = {
       addUtilities(newUtilities)
     }
   ],
-  darkMode: 'selector',
 }

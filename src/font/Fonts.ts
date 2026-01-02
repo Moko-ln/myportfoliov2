@@ -1,7 +1,7 @@
-import { Lato, Montserrat, Poppins} from 'next/font/google'
+import { Montserrat, Poppins, Rubik} from 'next/font/google'
 
 
-export const lato = Lato({
+export const rubik = Rubik({
     weight: '400',
     style: 'normal',
     subsets: ['latin'],

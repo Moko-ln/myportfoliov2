@@ -5,13 +5,15 @@ import { z } from "zod";
 
 // // Validation des données avec Zod
 const emailSchema = z.object({
-    email: z.string().email("Entrez une adresse e-mail valide pour que je puisse vous répondre !"),
-    message: z.string().min(10, "Dites-moi en un peu plus ! (min. 10 caractères)"),
+    email: z.string().email(),
+    message: z.string().min(10),
+    subject: z.string().min(2),
+    fullname: z.string(),
 });
 
-export async function sendEmail({ email, message, subject }: { email: string; message: string, subject:string }) {
+export async function sendEmail({ email, message, subject, fullname }: { email: string; message: string, subject:string, fullname:string }) {
     // Vérifier si les données sont valides
-    const validation = emailSchema.safeParse({ email, message });
+    const validation = emailSchema.safeParse({ email, message, subject, fullname });
 
     if (!validation.success) {
         return { success: false, error: validation.error.errors[0].message };
@@ -33,14 +35,32 @@ export async function sendEmail({ email, message, subject }: { email: string; me
             replyTo: email,
 
             html: `
-            <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background-color: #f9f9f9;">
-                <h2 style="color: #333;">Nouveau message de contact</h2>
-                <p><strong>Email :</strong> <a href="mailto:${email}" style="color: #007bff; text-decoration: none;">${email}</a></p>
-                <hr style="border: none; border-top: 1px solid #ddd;" />
-                <p style="white-space: pre-line; color: #555;"><strong>Message :</strong><br>${message}</p>
-                <hr style="border: none; border-top: 1px solid #ddd;" />
-                <p style="font-size: 14px; color: #888;">Merci de vérifier et de répondre rapidement.</p>
-            </div>
+                <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border-radius: 10px; background-color: #111; color: #f5f5f5;">
+                    <h2 style="color: #fff; margin-bottom: 16px;">📩 Nouveau message de ${fullname}</h2>
+
+                    <p style="margin: 0 0 12px 0; font-size: 15px;">
+                        <strong style="color: #ccc;">Sujet :</strong><br />
+                        <span style="color: #fff;">${subject}</span>
+                    </p>
+
+                    <p style="margin: 0 0 12px 0; font-size: 15px;">
+                        <strong style="color: #ccc;">Email :</strong><br />
+                        <a href="mailto:${email}" style="color: #4da6ff; text-decoration: none;">${email}</a>
+                    </p>
+
+                    <hr style="border: none; border-top: 1px solid #333; margin: 20px 0;" />
+
+                    <p style="white-space: pre-line; font-size: 15px; line-height: 1.6;">
+                        <strong style="color: #ccc;">Message :</strong><br />
+                        <span style="color: #e0e0e0;">${message}</span>
+                    </p>
+
+                    <hr style="border: none; border-top: 1px solid #333; margin: 20px 0;" />
+
+                    <p style="font-size: 13px; color: #777; text-align: center;">
+                        Merci d'avoir vérifié ce message. Répondez rapidement pour ne pas perdre le contact.  
+                    </p>
+                </div>
             `,
         });
 

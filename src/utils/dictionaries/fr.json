@@ -27,12 +27,29 @@
         "text": "Développeur Front-End basé en France. Je suis passionné par la création de projets pour le web."
     },
     "about":{
-        "title":"Développeur React",
-        "content":"Serge Lema conçoit des interfaces React performantes, pensées pour offrir une expérience utilisateur fluide et intuitive.",
+        "title":"À propos de moi",
+        "content":"Développeur front-end spécialisé en React et Next.js, je crée des interfaces modernes, rapides et centrées sur l’utilisateur. J’accompagne les équipes dans la conception et le développement de produits web performants.",
         "resume":{
             "labelbtn":"Mon cv",
             "link":"resume-fr.pdf"
-        }
+        },
+        "experiences": [
+            {
+              "id":1,
+              "xp":"3",
+              "title":"Années d'experience"
+            },
+            {
+              "id":2,
+              "xp":"23",
+              "title":"Projets completés"
+            },
+            {
+              "id":3,
+              "xp":"15+",
+              "title":"Clients dans le monde"
+            }
+          ]
     },
     "projects":[
         {
@@ -40,10 +57,11 @@
             "title": "Plongez dans un monde rempli de bulles.",
             "nameproject": "Mobali-Lab",
             "mainImage": "mobali",
+            "miniature":"mobali_",
             "slug": "mobali-lab",
             "content": "J’ai conçu et développé une plateforme immersive pour Mobali-Lab, une agence d'influence innovante. Ce projet met en avant leurs campagnes, leurs talents et leur approche unique du marketing d'influence à travers une interface moderne et dynamique.",
             "stack":["MongoDB", "ExpressJS", "ReactJS", "NodeJS"],
-            "medias": ["mobalilab_campaigns", "mobalilab_talents", "mobalilab_studio", "mobalilab_campaign"],
+            "medias": ["mobalilab_campaigns", "mbl03", "mbl02", "mbl01"],
             "design": "Inspirée par la dynamique et l'esthétique moderne du digital, la plateforme propose une expérience fluide et impactante, reflétant l'énergie et la précision des stratégies de Mobali-Lab.",
             "website": "https://mblcorps.com/",
             "customization": [
@@ -58,17 +76,19 @@
             "title": "Bienvenue dans l'application de l'ISIA !",
             "nameproject":"Isia CNRS",
             "mainImage":"isia",
+            "miniature":"isia_",
             "slug":"isia-cnrs",
             "content": "J'ai conçu et développé la refonte de l'application ISIA, un outil de gestion dédié aux plateformes de recherche en écologie. Ce projet a amélioré la soumission de propositions de projets et la gestion des ressources, offrant une interface moderne et intuitive.",
             "stack":["ReactJS", "TailwindCSS", "material UI", "Framer-Motion"],
-            "medias":["isia_first", "isia_landing","isia_select", "isia_catalog"],
+            "medias":["isia01", "isia05","isia03", "isia04"],
             "design": "Inspirée par les principes de l'expérience utilisateur centrée, l'application propose une navigation fluide et une esthétique épurée, facilitant l'accès aux différentes fonctionnalités pour les chercheurs et les administrateurs.",
             "website":"https://isia.cnrs.fr/",
             "customization": [
-                "Formulaires de soumission de projets interactifs et conviviaux",
-                "Tableaux de bord personnalisés pour le suivi des projets et des ressources",
-                "Intégration de notifications en temps réel pour les mises à jour importantes",
-                "Design responsive assurant une accessibilité optimale sur divers appareils"
+                "Création d’une API REST stable avec NodeJS et ExpressJS",
+                "Mise en place d’une authentification sécurisée via JWT avec routes protégées",
+                "Développement de fonctionnalités CRUD dynamiques pour les actualités",
+                "Conception d’une interface moderne et responsive avec ReactJS",
+                "Optimisation des requêtes MongoDB et du routing ExpressJS pour de hautes performances"
             ]
         },
         {
@@ -76,6 +96,7 @@
             "title":"Découvrez Night City à travers ses héros",
             "nameproject":"Cyberpunk - Edgerunners",
             "mainImage":"cyberpunk",
+            "miniature":"cyberpunk_",
             "slug":"cyberpunk-edgerunners",
             "content":"Plongez dans l’univers Cyberpunk Edgerunners avec une landing page interactive, que j’ai conçue et développée avec Next.js, offrant une immersion unique dans l’esthétique futuriste et rebelle de l’anime.",
             "stack":["NextJS", "Framer-Motion"],
@@ -89,12 +110,12 @@
                 "Design responsive pour une adaptation optimale sur tous les écrans"
             ]
         },
-        
         {
             "id": 4,
             "title": "Sonic – Refonte UI/UX avec animations",
             "nameproject": "Sonic",
             "mainImage": "sonic",
+            "miniature":"sonic_",
             "slug": "Sonic",
             "content": "Sonic est un projet de redesign où j’ai recréé la landing page de Framer à 80%, en modernisant son apparence et en améliorant certaines animations pour une expérience plus fluide et immersive. L’objectif était de perfectionner mes compétences en design et en animation en explorant les capacités de Framer Motion tout en utilisant SCSS pour le style.",
             "stack": ["ReactJS", "SCSS", "Framer-Motion"],
@@ -107,6 +128,27 @@
                 "Refonte visuelle inspirée du design Framer",
                 "Utilisation de SCSS pour une gestion flexible et modulaire du style"
             ]
+        },
+        {
+            "id": 5,
+            "title": "LubotaBaku – Système de gestion de rendez-vous",
+            "nameproject": "LubotaBaku",
+            "miniature": "lb_",
+            "mainImage": "lbmain",
+            "slug": "lubotabaku",
+            "content": "LubotaBaku est une plateforme de prise de rendez-vous pour une cliente en Allemagne, offrant un parcours de réservation intuitif et sécurisé ainsi qu’un espace d’administration complet.",
+            "stack": ["ReactJS", "Next.js", "Firebase", "TailwindCSS"],
+            "medias": ["lb01", "lb05", "lb02", "lb03"],
+            "design": "Une interface claire et professionnelle, avec un design moderne pensé pour simplifier la prise de rendez-vous.",
+            "website": "https://www.lubotabaku.de",
+            "pages": ["Landing", "À propos", "Contact", "FAQ"],
+            "customization": [
+                "Design complet de la landing page (hero, services, sections clés)",
+                "Parcours de réservation client étape par étape (type Doctolib)",
+                "Dashboard administrateur pour gérer rendez-vous, disponibilités et utilisateurs",
+                "Sécurisation des données via JWT / Firebase Auth",
+                "Site responsive et optimisé pour des performances rapides"
+            ]
         }
     ],
     "footer":{
@@ -118,11 +160,19 @@
         "forms":{
             "email": {
                 "text":"Email",
-                "required":"Veuillez entrer un email"
+                "required":"Veuillez entrer votre email",
+                "placeholder":"contactnickjunior@gmail.com",
+                "invalidEmailMessage":"Email invalide"
+            },
+            "fullname": {
+                "text":"Nom",
+                "required":"Veuillez entrer votre nom",
+                "placeholder":"Nick Junior"
             },
             "subject":{
-                "text":"Selectionnez un sujet",
-                "required":"Vous devez selectionnez un sujet",
+                "text":"De quoi avez besoin?",
+                "required":"De quoi avez besoin?",
+                "placeholder":"Selectioner...",
                 "options":[
                     {
                         "id":1,
@@ -157,8 +207,9 @@
                 ]
             },
             "message": {
-                "text":"Comment puis je vous aidez?",
-                "required":"Veuillez entrer un message"
+                "text":"Comment puis je vous aidez...",
+                "required":"Veuillez entrer un message",
+                "placeholder":"Bonjour, je voudrais me renseigner sur..."
             }
         }
     },
@@ -168,8 +219,8 @@
         "scroll":"Défiler vers le bas"
     },
     "playground":{
-        "title":["Terrain", "Jeux"],
-        "text":"Un terrain d’essai pour des projets rapides, des protos visuels, ou des idées tech un peu folles. Ici, tout est permis, tant que ça m’apprend ou m’amuse."
+        "title":"Terrain de jeux",
+        "content":"Un terrain d’essai pour des projets rapides, des protos visuels, ou des idées tech un peu folles. Ici, tout est permis, tant que ça m’apprend ou m’amuse."
     },
     "metadata":{
         "title":"Serge Lema | Développeur ReactJS & Designer",
@@ -218,7 +269,7 @@
         ]
     },
     "message":{
-        "error":"Aucun projet pour le moment",
+        "error":"Projets bientôt disponible!",
         "errorEmail":"Entrez une adresse e-mail valide pour que je puisse vous répondre !",
         "errorContent":"Dites-moi en un peu plus ! (min. 10 caractères).",
         "errorResponse":"Oups… Une erreur s’est produite. Veuillez réessayer plus tard.",

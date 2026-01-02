@@ -1,10 +1,6 @@
-"use client"
+import { Projects } from "./projects/_features/projects/Projects";
 
-import { Work } from "@/features/works/Work";
+export default function page(){
 
-export default function page() {
-  
-  return (
-    <Work />
-  );
+  return <Projects />
 }

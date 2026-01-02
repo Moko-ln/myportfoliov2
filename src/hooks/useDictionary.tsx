@@ -9,4 +9,4 @@ export const useDictionary = () => {
       throw new Error("useDictionary must be used within a DictionaryProvider");
     }
     return context;
-  };
+};

@@ -1,7 +1,9 @@
+"use client"
+
 import { createContext, useEffect, useState, ReactNode } from 'react';
 import { dictionaryAng, dictionaryFr } from "@/utils/Dictionary";
 import { dataDictionaryPropType, langageContextType } from "@/type";
-import LoadingPage from "@/components/LoadingPage";
+import { LoadingPage } from '@/components/templates/LoadingPage';
 
 export const LangageContext = createContext<langageContextType | null>(null);
 
@@ -38,7 +40,7 @@ const LangageProvider: React.FC<MyComponentProps> = ({ children }) => {
     if (isLoading) return <LoadingPage />
 
     return (
-        <LangageContext.Provider value={{ langage,dict, toggleLangage }}>
+        <LangageContext.Provider value={{ langage, dict, toggleLangage, setLangage  }}>
             {children}
         </LangageContext.Provider>
     );

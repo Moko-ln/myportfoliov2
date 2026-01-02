@@ -1,5 +1,5 @@
 import { montserrat } from "@/font/Fonts";
-import useLangage from "@/useLangage";
+import useLangage from "@/hooks/useLangage";
 import { motion, useAnimationFrame, useMotionValue, useScroll, useSpring, useTransform, useVelocity, wrap } from "framer-motion";
 import { useRef } from "react";
 
